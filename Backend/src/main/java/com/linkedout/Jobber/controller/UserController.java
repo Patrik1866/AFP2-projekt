@@ -8,7 +8,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/afp2API")
 public class UserController {
 
     @Autowired
@@ -19,7 +19,7 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    @PostMapping("/employees")
+    @PostMapping("/users")
     public User createEmployee(@RequestBody User user  ) {
         return userRepository.save(user);
     }
