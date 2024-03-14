@@ -10,6 +10,7 @@ Rendszerünk célja hogy a felhasználók egyszerűen otthonról, iskolából, k
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 | 4.1 -- Főoldal  | 4.2 -- Profil | 4.3 -- Munkák | 4.4 -- Csevegés |
+|  :----------    |  ----------   |  -----------  |  -------------  |
 | 4.1.1 --        | 4.2.1 --      | 4.3.1 --      | 4.4.1 --        |
 | 4.1.2 --        | 4.2.2 --      | 4.3.2 --      | 4.4.2 --        |
 | 4.1.3 --        | 4.2.3 --      | 4.3.3 --      | 4.4.3 --        |
