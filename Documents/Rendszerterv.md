@@ -4,26 +4,26 @@
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum masters:
-   * Product owner: 
-   * Üzleti szereplő:
+   * Scrum master: Kaponya Martin
+   * Product owner: Kaponya Martin
+   * Üzleti szereplő: N/A
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend:
-   * Backend:
-   * Tesztelés:
+   * Frontend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
+   * Backend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
+   * Tesztelés: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
      
 ### 2.3 Ütemterv:
 
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
 |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
-|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
-|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
-|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
-|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
-|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
+|Követelmény specifikáció |Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |
+|Rendszerterv             |Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |
+|Weboldal                 |Képernyőtervek elkészítése              |         2 |             9 |                      9 |                1 |                   9 |
+|Weboldal                 |Prototípus elkészítése                  |         3 |            28 |                     28 |                1 |                  28 |
+|Weboldal                 |Alapfunkciók elkészítése                |         3 |            21 |                     21 |                1 |                  21 |
+|Weboldal                 |Tesztelés                               |         4 |            21 |                     21 |                1 |                  21 |
 
 ### 2.4 Mérföldkövek:
    * Prototípus átadása
