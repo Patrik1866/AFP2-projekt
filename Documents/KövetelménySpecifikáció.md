@@ -9,30 +9,12 @@ Napjainkban, a rohamosan fejlődő világban egyre nagyobb szükség van olyan s
 Rendszerünk célja hogy a felhasználók egyszerűen otthonról, iskolából, kávézóból, esetleg a jelenlegi munkahelyükről(amit nem kedvelnek), könnyedén kereshessenek és jelentkezzenek egy másik, elvárásaikhoz megfelelő munkahelyre jelentkezhessenek.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
-4.1 -- Főoldal
-4.1.1 -- 
-4.1.2 --
-4.1.3 --
-4.1.4 --
-4.1.5 --
-4.2 -- Profil
-4.2.1 --
-4.2.2 --
-4.2.3 --
-4.2.4 --
-4.2.5 --
-4.3 -- Munkák
-4.3.1 --
-4.3.2 --
-4.3.3 --
-4.3.4 --
-4.3.5 --
-4.4 -- Csevegés
-4.4.1 --
-4.4.2 --
-4.4.3 --
-4.4.4 --
-4.4.5 --
+| 4.1 -- Főoldal  | 4.2 -- Profil | 4.3 -- Munkák | 4.4 -- Csevegés |
+| 4.1.1 --        | 4.2.1 --      | 4.3.1 --      | 4.4.1 --        |
+| 4.1.2 --        | 4.2.2 --      | 4.3.2 --      | 4.4.2 --        |
+| 4.1.3 --        | 4.2.3 --      | 4.3.3 --      | 4.4.3 --        |
+| 4.1.4 --        | 4.2.4 --      | 4.3.4 --      | 4.4.4 --        |
+| 4.1.5 --        | 4.2.5 --      | 4.3.5 --      | 4.4.5 --        |
 
 ## 5. Igényelt üzleti folyamatok modellje
 5.1 --
