@@ -11,16 +11,18 @@ import java.util.List;
 @RequestMapping("/afp2API")
 public class UserController {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+    public UserController(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @GetMapping("/users")
-    public List<User> getAllEmployees() {
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
     @PostMapping("/users")
-    public User createEmployee(@RequestBody User user  ) {
+    public User createUsers(@RequestBody User user  ) {
         return userRepository.save(user);
     }
 
