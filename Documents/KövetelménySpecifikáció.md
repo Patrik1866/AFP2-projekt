@@ -5,4 +5,4 @@ Rendszerünk célja egy webes applikáció ami lehetővés teszi a felhasználó
 ## 2. Jelenlegi helyzet
 Napjainkban, a rohamosan fejlődő világban egyre nagyobb szükség van olyan szoftverekre amik könnyítik, és segítik az embereknek a mindennapi teendőiket. Ezzel az alkalmazással szeretnénk nekik segíteni olyan területen, hogy bámiféle komolyabb erőfeszítés nélkül, könnyedén vadászhassanak jobbnál jobb munkalehetőségek után mindezt úgy, hogy közben a teendőiket  megszakítás nélkül végezhessék.
 
-## 3. 
+## 3. Vágyálom rendszer
