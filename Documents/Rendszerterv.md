@@ -58,14 +58,17 @@
 
 ## 6. Fizikai környezet
 
-### Vásárolt softwarekomponensek és külső rendszerek
-
-### Hardver topológia
-
-### Fizikai alrendszerek
-
-### Fejlesztő eszközök
-
+### Vásárolt softwarekomponensek és külső rendszerek:
+* Nincsenek megvásárolt komponensek.
+### Hardver topológia:
+* Az alkalmazás helyi számítógépen fut (localhost), amely egy dedikált H2 adatbázis-szerverhez kapcsolódik.
+### Fizikai alrendszerek:
+* Az alkalmazás backendje Spring Boot-on fut, míg a frontend Angular technológiát használ.
+### Fejlesztő eszközök:
+* IntelliJ IDEA
+* Visual Studio Code
+* Postman
+* Git
 
 ## 8. Architekturális terv
 
