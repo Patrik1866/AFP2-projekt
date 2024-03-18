@@ -81,7 +81,11 @@
 ## 9. Adatbázis terv
 
 ## 10. Implementációs terv
+* A webes felület Angular keretrendszerben fog elkészülni, amely TypeScript nyelven íródott. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz.
+* Az adatokat egy H2 adatbázisban fogjuk tárolni.
+* A backend Spring Boot keretrendszerben készül, ami Java nyelven íródott. A Spring Boot lehetővé teszi számunkra, hogy gyorsan és egyszerűen fejlesszünk Spring-alapú alkalmazásokat, minimalizálva a konfigurációt.
 
+***A frontend és a backend közötti kommunikáció REST API-n keresztül történik.***
 ## 11. Tesztterv
 
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
