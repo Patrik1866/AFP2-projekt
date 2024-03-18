@@ -8,9 +8,12 @@ A munkakereső oldalak versenye nemcsak helyi, hanem nemzetközi szinten is jele
 ## 2. Vágyálomrendszer leírása
 Az idővonalon keresztül a felhasználók könnyen és hatékonyan kezelhetik saját profiljukat, beleértve a kompetenciákat, személyes adatokat, profilképet és iskolákat. Emellett lehetőség van üzenetváltásra más felhasználókkal, valamint hálózatépítésre és cégek követésére is. Az otthoni oldalon az idővonal mellett a felhasználók profil ikonját, a chat lehetőségét és a barátokat találják, míg a saját profil oldalon további profilszerkesztési lehetőség áll rendelkezésre. Az üzenetküldés funkció lehetővé teszi a chat-et és az üzenetváltást, míg a munkakeresési részlegen könnyen kereshetnek és szűrhetnek a felhasználók a rendszerben elérhető munkalehetőségek között. Ezen szolgáltatások együttesen segítik a felhasználókat abban, hogy hatékonyan használják és kihasználják a munkakereső oldal által kínált lehetőségeket.
 ## 3. Jelenlegi üzleti folyamatok modellje
-A jelenleg rendelkezésre álló munkakeresési, és munka kínálásra használható oldalak az internet, melyek tele vannak nagyon sok felslegesnek vélt funkcióval. Amik csak a felhasználó idejét és türelmét igényli mire ki tud rajta igazodni, hogy mégis milyen funkciókra van szüksége. Valamint maga a felület sem a legátláthatóbb, mely az előbb említett problémákat hozzák elő. Továbbá ezeken az oldalakon 
+A jelenleg rendelkezésre álló munkakeresési, és munka kínálásra használható oldalak az internet, melyek tele vannak nagyon sok felslegesnek vélt funkcióval. Amik csak a felhasználó idejét és türelmét igényli mire ki tud rajta igazodni, hogy mégis milyen funkciókra van szüksége. Valamint maga a felület sem a legátláthatóbb, mely az előbb említett problémákat hozzák elő. Továbbá ezeken az oldalakon nincs megfelelő felület a munkáltató és a munkavállaló közti kommunikációra.
 
 ## 4. Igényelt üzleti folyamatok modellje
+
+Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók feladatát, létrehozunk egy olyan oldalt mely a kornak megfelelően helyt tud állni a munkakeresési oldalak széles választéka közt. Egyszerűbb lesz mind a munkáltató, mind a munkavállaló szemszögéből a felület kezelése. A munkavállaló számára a saját profil kezelése jó val egyszerűbb lesz, nem kell megannyi sokszor feleslegesnek vélt adatot megosztania magáról. Lehetőséget biztosítunk a munkavállaló és munkáltató közti oldalon történő kommunikációra, mely megkönnyítheti a későbbi időpontegyeztetéseket.
+
 
 ## 5. Követelménylista
 
