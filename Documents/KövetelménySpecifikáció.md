@@ -18,4 +18,4 @@ Rendszerünk célja hogy a felhasználók egyszerűen otthonról, iskolából, k
 | 4.1.5 --        | 4.2.5 --      | 4.3.5 --      | 4.4.5 --        |
 
 ## 5. Igényelt üzleti folyamatok modellje
-5.1 --
+Célunk egy egyszerűen kezelhető online platform létrehozása a munkakeresés terén, amely könnyedén integrálható a jelenleg elérhető széles körű lehetőségek közé. A felület minimalizálja mind a munkáltatók, mind pedig a munkavállalók adminisztratív terheit, biztosítva egy intuitív profilkezelést a munkavállalók számára. Emellett lehetőséget biztosítunk a közvetlen kommunikációra a munkáltatók és munkavállalók között, megkönnyítve ezzel az állásajánlatokra való jelentkezést és az időpontegyeztetéseket. Összességében a platformunk segíti a hatékonyabb munkaerő-piaci kapcsolatok kialakítását mindkét fél számára.
