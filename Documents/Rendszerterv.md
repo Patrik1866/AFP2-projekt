@@ -72,12 +72,12 @@
 
 ## 8. Architekturális terv
 
-### Webszerver
-
-### Adatbázis rendszer
-
-### A program elérése, kezelése
-
+### Webszerver:
+* Az alkalmazás egy helyi számítógépen (localhost) futó beépített webszerveren fut. A beépített szerver felelős az alkalmazás statikus tartalmának és a REST API végpontoknak a kiszolgálásáért.
+### Adatbázis rendszer:
+* Az alkalmazás H2 adatbázist használ, amely egy in-memory adatbázis rendszer. Ez lehetővé teszi a fejlesztők számára, hogy gyorsan és egyszerűen hozzáférjenek az adatokhoz fejlesztés közben.
+### A program elérése, kezelése:
+* Az alkalmazás elérhető a helyi számítógépen a böngészőn keresztül, a localhost címen. A felhasználók bejelentkezhetnek a rendszerbe a felhasználónevükkel és jelszavukkal.
 ## 9. Adatbázis terv
 
 ## 10. Implementációs terv
