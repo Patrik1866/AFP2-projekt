@@ -19,3 +19,17 @@ Rendszerünk célja hogy a felhasználók egyszerűen otthonról, iskolából, k
 
 ## 5. Igényelt üzleti folyamatok modellje
 Célunk egy egyszerűen kezelhető online platform létrehozása a munkakeresés terén, amely könnyedén integrálható a jelenleg elérhető széles körű lehetőségek közé. A felület minimalizálja mind a munkáltatók, mind pedig a munkavállalók adminisztratív terheit, biztosítva egy intuitív profilkezelést a munkavállalók számára. Emellett lehetőséget biztosítunk a közvetlen kommunikációra a munkáltatók és munkavállalók között, megkönnyítve ezzel az állásajánlatokra való jelentkezést és az időpontegyeztetéseket. Összességében a platformunk segíti a hatékonyabb munkaerő-piaci kapcsolatok kialakítását mindkét fél számára.
+
+## 6. Követelménylista
+
+| Modul | ID | Név | Leírás |
+| :---: | --- | --- | --- |
+| Jogosultság | K1 | Regisztrációs felület | A felhasználó a felhasználói nevének, emailcímének és jelszavának megadásával regisztráljamagát. |
+|Jogosultság |K2|Bejelentkezési felület| A felhasználó a megadott e-mail címe és jelszava alapján be tud jelentkezni a felületre.|
+| Jogosultság |K3|Jogosultsági szintek|Munkáltató:munka meghirdetése , Munkavállaló: munkák böngészése|
+|Modifikáció|K4|Felhasználó módosítása| A felhasználó módosítani tudja a saját felhasználó nevét.|
+|Modifikáció|K5|Jelszó módosítása| A felhasználó módosítani tudja a jelszavát, a régi valamint újnak szánt jelszó megadásával.|
+|Felület|K6|Saját Profil|A felhasználó megtudja adni a saját adatait.|
+|Felület|K7|Idővonal|A felhasználó álltal követett cégek munkalehetőségei jellenk meg.|
+|Felület|K8| Chat |A munkáltató és a munkavállaló közti kommunikációra szánt felület.|
+|Felület|K9|Kereső| A felhasználó az oldalon felelhető cégek között tud keresni, akár név megadásával is.|
