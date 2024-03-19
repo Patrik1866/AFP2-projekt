@@ -128,3 +128,7 @@ Szoftver telepítési terv:
 **A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek. A weboldal URL címét szükséges ismerni és ezt beírni a böngésző címsorába.**
 
 ## 13. Karbantartási terv
+***Figyelembe kell venni a felhasználók által jött visszajelzéseket a programmal kapcsolatban. Ha hibát talált, mielőbb orvosolni kell, lehet az:***
+
+* Működéssel kapcsolatos.
+* Kinézet, dizájnnal kapcsolatos.
