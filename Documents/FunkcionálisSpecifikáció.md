@@ -30,7 +30,9 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 |Felület|K9|Kereső| A felhasználó az oldalon felelhető cégek között tud keresni, akár név megadásával is.|
 
 ## 6. Használati esetek
-
+* Az admin ellenőrizheti a munkalehetőségeket amiket a munkáltatók feltöltenek.
+* Már huzamosabb ideje inaktív felhasználók törlése.
+* A munkáltató saját munkalehetőségeket tölthet fel kategóriára bontva, a munkavállaló pedig ezek szerint böngészhet közöttük.
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 
 ## 8. Képernyőtervek
