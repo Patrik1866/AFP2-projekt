@@ -115,7 +115,16 @@ például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával 
 ## 12. Telepítési terv
 
 Fizikai telepítési terv: 
-
+* Fizikai módon való telepítés nem szükséges az alkalmazásunk használatához.
+  
 Szoftver telepítési terv: 
+
+***A szoftver webes felületéhez csak egy böngésző telepítése szükséges.***
+
+* Windows - Microsoft Edge
+* Linux - Mozilla Firefox
+* Mac - Safari
+
+**A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek. A weboldal URL címét szükséges ismerni és ezt beírni a böngésző címsorába.**
 
 ## 13. Karbantartási terv
