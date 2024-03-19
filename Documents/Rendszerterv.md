@@ -1,6 +1,8 @@
 # Rendszerterv
 ## 1. A rendszer célja
-
+* A rendszer célja egy webes felülettel rendelkező, munkáltató és munkavállaló közötti, kapcsolattartásra és munkalehetőségek hirdetésére/keresésére szolgáló weboldal.
+* Ezen a felületen a munkáltató megkereshet munkavállalókat, akiket specifikus munkákra alkalmasnak talál és munkát ajánlhat nekik.
+* A munkavállalók ezeket az ajánlatokat megtekinthetik, elfogadhatják, ha eléri a követelményeiket.
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
