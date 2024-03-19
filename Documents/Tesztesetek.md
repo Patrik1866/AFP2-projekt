@@ -7,3 +7,4 @@
 
 Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás | Időpont
 --- | --- | --- | --- | --- | --- | --- 
+1 | teszt | teszt  | Siker | - | Tesztelő neve | (Dátum)
