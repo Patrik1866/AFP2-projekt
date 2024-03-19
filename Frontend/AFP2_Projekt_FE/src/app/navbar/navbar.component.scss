@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  
+  .navbar-nav {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 1em;
+  }
+  
+  .nav-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #0056b3;
+  }
+  .nav-item.nav-link {
+    cursor: pointer;
+  }
+    

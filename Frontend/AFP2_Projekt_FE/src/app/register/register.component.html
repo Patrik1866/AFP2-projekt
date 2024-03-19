@@ -1,1 +1,14 @@
-<p>register works!</p>
+<div class="register">
+    <h2>Register</h2>
+    <form id="formregister" (submit)="register($event, name.value, password.value, email.value, job.value, phone.value, picture.value, userCode.value)">
+      <input #name type="text" placeholder="Name" required>
+      <input #password type="password" placeholder="Password" required>
+      <input #email type="email" placeholder="Email" required>
+      <input #job type="text" placeholder="Job">
+      <input #phone type="tel" placeholder="Phone">
+      <input #picture type="text" placeholder="Picture URL">
+      <input #userCode type="text" placeholder="User Code">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  

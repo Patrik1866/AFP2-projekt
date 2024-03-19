@@ -3,11 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { routes } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent],
+  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent, RouterModule, NavbarComponent, HomepageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
