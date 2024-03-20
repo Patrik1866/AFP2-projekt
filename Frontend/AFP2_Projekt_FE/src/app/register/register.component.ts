@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { routes } from '../app.routes';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -16,7 +17,7 @@ import { CommonModule } from '@angular/common';
 export class RegisterComponent {
   newUser: User = new User();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   register(event: Event, name: string, password: string, email: string, job: string, phone: string, picture: string, userCode: string): void {
     event.preventDefault();
@@ -31,6 +32,7 @@ export class RegisterComponent {
     this.addUser(this.newUser).subscribe(user => {
       window.alert('User registered successfully');
       console.log('User registered successfully');
+      this.router.navigate(['/login']);
     });
   }
 
