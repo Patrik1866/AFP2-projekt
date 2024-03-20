@@ -74,7 +74,8 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 
 | Id | Követelmény | Funkció |
 | :---: | --- | --- |
-| K4 | ... | ... |
+| K4 | Felhasználó módosítása | A felhasználó a saját profiljában módosíthatja a felhasználónevét. |
+| K5 | Jelszó módosítása | A felhasználó a saját profiljában módosíthatja a jelszavát, megadva a régi és az új jelszót. |
 
 ## 11 Fogalomszótár
 
