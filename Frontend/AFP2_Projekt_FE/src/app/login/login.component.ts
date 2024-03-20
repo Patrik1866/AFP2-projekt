@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { routes } from '../app.routes';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
 export class LoginComponent {
   users: User[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
     this.http.get<User[]>('http://localhost:8080/afp2API/users').subscribe(data => {
@@ -31,10 +32,13 @@ export class LoginComponent {
     if (user) {
       window.alert('Login successful');
       console.log('Login successful');
+      localStorage.setItem('user', JSON.stringify(user)); // Store user data in localStorage
+      this.router.navigate(['/mainpage']);
     } else {
       window.alert('Invalid credentials');
       console.log('Invalid credentials');
     }
+    
   }
   
 }
