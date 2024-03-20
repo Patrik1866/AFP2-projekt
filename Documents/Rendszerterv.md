@@ -90,7 +90,24 @@
 ## 7. Adatbázis terv
 
 **Táblák**
-
+   -**Feed**
+      -**ID**
+      -**Content**
+      -**Date**
+      -**Feed_Code**
+      -**Title**
+   -**Users**
+      -**ID**
+      -**Email**
+      -**Job**
+      -**Name**
+      -**Password**
+      -**Phone**
+      -**Picture**
+      -**User_Code**
+      -**Indexes**
+   -**Employers**
+      **Work In Progress**
 
 ## 8. Architekturális terv
 
