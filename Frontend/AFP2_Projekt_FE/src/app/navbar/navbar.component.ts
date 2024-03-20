@@ -23,8 +23,13 @@ export class NavbarComponent {
   logout() {
     if (typeof window !== 'undefined') {
       window.localStorage.removeItem('user');
+      window.history.pushState(null, '', window.location.href);
+      window.onpopstate = function(event) {
+        window.history.go(1);
+      };
     }
-    window.alert('Successfully logged out!');
-    this.router.navigate(['/homepage']);
+    this.router.navigate(['/login']);
   }
+  
+  
 }

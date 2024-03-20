@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../post';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mainpage',
@@ -13,10 +14,14 @@ export class MainpageComponent implements OnInit{
 
   posts: Post[] = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.loadPosts();
+    const user = localStorage.getItem('user');
+    if (!user) {
+      this.router.navigate(['/login']);
+    }
   }
 
   loadPosts(): void {
