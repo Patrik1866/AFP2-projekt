@@ -1,8 +1,10 @@
 # Rendszerterv
 ## 1. A rendszer célja
-* A rendszer célja egy webes felülettel rendelkező, munkáltató és munkavállaló közötti, kapcsolattartásra és munkalehetőségek hirdetésére/keresésére szolgáló weboldal.
+* A rendszer célja egy webes felülettel rendelkező, munkáltató és munkavállaló közötti, kapcsolattartásra és munkalehetőségek hirdetésére/keresésére szolgáló weboldal működtetése.
 * Ezen a felületen a munkáltató megkereshet munkavállalókat, akiket specifikus munkákra alkalmasnak talál és munkát ajánlhat nekik.
-* A munkavállalók ezeket az ajánlatokat megtekinthetik, elfogadhatják, ha eléri a követelményeiket.
+* A munkavállalók ezeket az ajánlatokat megtekinthetik, elfogadhatják, ha megfelel a követelményeiknek.
+* Az álláskeresők elküldhetik jelentkezésüket a cégek által meghirdetett nyitott pozíciókra.
+* A vállalkozások HR dolgozói a jelentkezők közül azonnal felvehetik a kapcsolatot az ígéretes jelöltekkel.
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
@@ -11,24 +13,28 @@
    * Üzleti szereplő: N/A
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
-   * Backend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
-   * Tesztelés: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
+   * Frontend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka Gergő
+   * Backend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka Gergő
+   * Tesztelés: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka Gergő
      
 ### 2.3 Ütemterv:
 
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
 |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
-|Követelmény specifikáció |Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |             
-|Funkcionális specifikáció|Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |
-|Rendszerterv             |Megírás                                 |         1 |             2 |                      2 |                1 |                   1 |
+|Követelmény specifikáció |Megírás                                 |         1 |             2 |                      2 |                2 |                   2 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             2 |                      2 |                2 |                   2 |
+|Rendszerterv             |Megírás                                 |         1 |             2 |                      2 |                2 |                   2 |
 |Weboldal                 |Képernyőtervek elkészítése              |         2 |             9 |                      9 |                1 |                   9 |
 |Weboldal                 |Prototípus elkészítése                  |         3 |            28 |                     28 |                1 |                  28 |
 |Weboldal                 |Alapfunkciók elkészítése                |         3 |            21 |                     21 |                1 |                  21 |
 |Weboldal                 |Tesztelés                               |         4 |            21 |                     21 |                1 |                  21 |
 
 ### 2.4 Mérföldkövek:
+   * Projektterv kidolgozása
+   * Dokumentációk (specifikációk) véglegesítése
    * Prototípus átadása
+   * Tesztelés és hibák kijavítása
+   * Bemutatás
 
 ## 3. Üzleti folyamatok modellje
 
