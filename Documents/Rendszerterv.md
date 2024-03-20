@@ -33,6 +33,10 @@
 ## 3. Üzleti folyamatok modellje
 
 ### 3.1 Üzleti szereplők
+   * Megrendelők: Azok a szervezetek vagy egyének, akik informatikai termékeket vagy szolgáltatásokat igényelnek, például vállalatok, kormányzati szervek vagy magánszemélyek.
+   * Informatikai szakemberek: Az informatika cég alkalmazottai, akik felelősek a szoftverfejlesztésért, rendszertervezésért, hálózatkezelésért és más informatikai tevékenységekért.
+   * Beszállítók: Olyan vállalatok vagy egyének, akik informatikai hardvereket, szoftvereket vagy más technológiai eszközöket szállítanak az informatikai cég számára.
+   * Partnerek: Olyan vállalatok vagy szervezetek, akikkel az informatikai cég stratégiai együttműködést folytat, például szoftverintegrátorok, hálózati szolgáltatók vagy tanácsadó cégek.
 
 ### 3.2 Üzleti folyamatok
 
