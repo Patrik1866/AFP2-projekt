@@ -33,3 +33,10 @@ Célunk egy egyszerűen kezelhető online platform létrehozása a munkakeresés
 |Felület|K7|Idővonal|A felhasználó álltal követett cégek munkalehetőségei jellenk meg.|
 |Felület|K8| Chat |A munkáltató és a munkavállaló közti kommunikációra szánt felület.|
 |Felület|K9|Kereső| A felhasználó az oldalon felelhető cégek között tud keresni, akár név megadásával is.|
+
+## 7. Fogalomszótár
+
+Jogosultság: A felhasználók által elérhető funkciókat és azokhoz tartozó hozzáféréseket és engedélyeket kezeli.
+Modifikáció: Az adatok vagy beállítások módosítását és frissítését kezeli.
+Felület: Az alkalmazás vagy rendszer kezelőfelületeit és azok funkcióit kezeli.
+Kereső: Egy olyan funkciót jelent, amely lehetővé teszi a felhasználók számára a kívánt információk gyors megtalálását egy adott adatbázisban vagy rendszerben.
