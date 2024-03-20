@@ -33,7 +33,18 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 * Az admin ellenőrizheti a munkalehetőségeket amiket a munkáltatók feltöltenek.
 * Már huzamosabb ideje inaktív felhasználók törlése.
 * A munkáltató saját munkalehetőségeket tölthet fel kategóriára bontva, a munkavállaló pedig ezek szerint böngészhet közöttük.
+
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
+
+* Regisztrációs felület (K1): A felhasználóknak lehetőségük van regisztrálni a weboldalra, megadva a felhasználói nevet, az e-mail címet és a jelszót.
+* Bejelentkezési felület (K2): A regisztrált felhasználók be tudnak jelentkezni az e-mail címük és jelszavuk megadásával.
+* Jogosultsági szintek (K3): A rendszer két jogosultsági szintet tartalmaz: munkáltatói és munkavállalói szintet, amelyek különböző funkciókat biztosítanak.
+* Felhasználó módosítása (K4): A felhasználóknak lehetőségük van módosítani a felhasználói nevüket a profiljukban.
+* Jelszó módosítása (K5): A felhasználók képesek módosítani a jelszavukat a profiljukban, megadva a régi és az új jelszót.
+* Saját Profil (K6): A felhasználók részletes adatokat tudnak megadni a profiljukban, ideértve a kompetenciákat, személyes adatokat, profilképet és iskolákat.
+* Idővonal (K7): A felhasználók látják a követett cégek által hirdetett munkalehetőségeket az idővonalukon.
+* Chat (K8): A platformon belül lehetőség van a munkáltatók és a munkavállalók közti kommunikációra szánt chat funkció használatára.
+* Kereső (K9): A felhasználók kereső funkciót használhatnak az oldalon szereplő cégek között, akár név alapján is.
 
 ## 8. Képernyőtervek
 
