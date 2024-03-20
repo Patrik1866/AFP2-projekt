@@ -20,7 +20,7 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 | Modul | ID | Név | Leírás |
 | :---: | --- | --- | --- |
 | Jogosultság | K1 | Regisztrációs felület | A felhasználó a felhasználói nevének, emailcímének és jelszavának megadásával regisztráljamagát. |
-|Jogosultság |K2|Bejelentkezési felület| A felhasználó a megadott e-mail címe és jelszava alapján be tud jelentkezni a felületre.|
+| Jogosultság |K2|Bejelentkezési felület| A felhasználó a megadott e-mail címe és jelszava alapján be tud jelentkezni a felületre.|
 | Jogosultság |K3|Jogosultsági szintek|Munkáltató:munka meghirdetése , Munkavállaló: munkák böngészése|
 |Modifikáció|K4|Felhasználó módosítása| A felhasználó módosítani tudja a saját felhasználó nevét.|
 |Modifikáció|K5|Jelszó módosítása| A felhasználó módosítani tudja a jelszavát, a régi valamint újnak szánt jelszó megadásával.|
@@ -28,13 +28,18 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 |Felület|K7|Idővonal|A felhasználó álltal követett cégek munkalehetőségei jellenk meg.|
 |Felület|K8| Chat |A munkáltató és a munkavállaló közti kommunikációra szánt felület.|
 |Felület|K9|Kereső| A felhasználó az oldalon felelhető cégek között tud keresni, akár név megadásával is.|
+| Backend | K10 |Teljesítmény, skálázhatóság|Gyors működés sok felhasználó egyidejű kiszolgálása során is.|
+| Biztonság | K11 |Biztonság|A felhasználók adatainak védelme illetéktelen hozzáféréstől.|
+| Frontend | K12 |Felhasználói élmény|Könnyen átlátható felhasználóbarát felület a gyorsabb kezelhetőség érdekében.|
+| Kompatibilitás | K13 |Kompatibilitás|Különböző eszközök és böngészők támogatása, reszponzív design.|
 
 ## 6. Használati esetek
 * Az admin ellenőrizheti a munkalehetőségeket amiket a munkáltatók feltöltenek.
 * Már huzamosabb ideje inaktív felhasználók törlése.
-* A munkáltató saját munkalehetőségeket tölthet fel kategóriára bontva, a munkavállaló pedig ezek szerint böngészhet közöttük.
+* A munkáltató saját munkalehetőségeket tölthet fel kategóriákra bontva, a munkavállaló pedig ezek szerint böngészhet közöttük.
+* A munkaadók is felkereshetik állásajánlataikkal az aktív álláskeresőket.
 
-## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
+## 7. Megfeleltetés, hogyan fedik le a használati esetek a funkcionális követelményeket
 
 * Regisztrációs felület (K1): A felhasználóknak lehetőségük van regisztrálni a weboldalra, megadva a felhasználói nevet, az e-mail címet és a jelszót.
 * Bejelentkezési felület (K2): A regisztrált felhasználók be tudnak jelentkezni az e-mail címük és jelszavuk megadásával.
