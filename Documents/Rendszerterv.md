@@ -58,15 +58,28 @@
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K1 | ... | ... |
+| K1 |Regisztráció| A felhasználó a felhasználói nevének, emailcímének és jelszavának megadásával regisztráljamagát. |
+| K2 |Bejelentkezés| A felhasználó a megadott e-mail címe és jelszava alapján be tud jelentkezni a felületre.|
+| K3 |Jogosultsági szintek| Munkáltató:munka meghirdetése, Munkavállaló: munkák böngészése |
+| K4 |Felhasználó módosítása| A felhasználó módosítani tudja a saját felhasználó nevét.|
+| K5 |Jelszó módosítása| A felhasználó módosítani tudja a jelszavát, a régi valamint újnak szánt jelszó megadásával.|
+| K6 |Saját Profil|A felhasználó megtudja adni vagy módosíthatja a saját adatait.|
+| K7 |Idővonal|A felhasználó álltal követett cégek munkalehetőségei jellenk meg.|
+| K8 | Chat |Felhasználók közti kommunikációra szánt felület.|
+| K9 |Kereső|A felhasználó az oldalon fellelhető cégek között tud keresni, különböző szűrési feltételek alapján.|
 
 ### Nemfunkcionális követelmények
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K4 | ... | ... |
+| K3 |Jogosultsági szintek|Hozzáférési jogok megfelelő kezelése.|
+| K10 |Teljesítmény, skálázhatóság|Gyors működés sok felhasználó egyidejű kiszolgálása során is.|
+| K11 |Biztonság|A felhasználók adatainak védelme illetéktelen hozzáféréstől.|
+| K12 |Felhasználói élmény|Könnyen átlátható felhasználóbarát felület a gyorsabb kezelhetőség érdekében.|
+| K13 |Kompatibilitás|Különböző eszközök és böngészők támogatása, reszponzív design.|
 
 ### Támogatott eszközök
+Bármely olyan eszköz, amelyen modern böngészők futtathatók, pl.: mobil eszközök (telefon, tablet, stb.) vagy asztali számítógépek.
 
 ## 5. Funkcionális terv
 
