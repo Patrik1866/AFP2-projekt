@@ -40,6 +40,12 @@
 
 ### 3.2 Üzleti folyamatok
 
+   * Ügyféltámogatási folyamat: Ez a folyamat magában foglalja az ügyfelekkel való kommunikációt, problémák diagnosztizálását és megoldását, valamint az ügyfelek elégedettségének biztosítását.
+   * Szoftverfejlesztési folyamat: Az informatikai cég által kínált szoftverek fejlesztésének és karbantartásának folyamata, amely magában foglalja a követelmények meghatározását, tervezést, fejlesztést, tesztelést és kiadást.
+   * Projektmenedzsment folyamat: A projektmenedzsment folyamat során az informatikai cég koordinálja és irányítja az összes projektet, beleértve a határidők, költségvetés és erőforrások kezelését.
+   * Értékesítési folyamat: Az informatikai cég által kínált termékek és szolgáltatások értékesítési folyamata, ideértve az értékesítési csatornák menedzselését, ajánlatok készítését, tárgyalásokat és szerződéskötést.
+   * Beszerzési folyamat: Az informatikai cég számára szükséges technológiai eszközök, szoftverek és egyéb erőforrások beszerzésének folyamata, beleértve a beszállítókkal való kapcsolatfelvételt, ajánlatkérést és beszerzési döntéseket.
+
 ## 4. Követelmények
 
 ### Funkcionális követelmények
