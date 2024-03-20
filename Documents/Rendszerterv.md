@@ -54,9 +54,14 @@
 
 ## 5. Funkcionális terv
 
-### 5.1 Rendszerszereplők
+**Rendszerszereplők:**
+  - **Felhasználó**
 
-### 5.2 Menühierarchiák
+  **Rendszerhasználati esetek és lefutásaik:**
+  - **Felhasználó**
+    - **Megtekintheti a bejegyzéseket a feed-en**
+    - **Törölheti/módosíthatja a korábban létrehozott bejegyzéseket**
+    - **Megtekintheti a munkalehetőségeket, elfogadhatja/elutasíthatja**
 
 ## 6. Fizikai környezet
 
