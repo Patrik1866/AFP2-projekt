@@ -11,9 +11,9 @@
    * Üzleti szereplő: N/A
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
-   * Backend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
-   * Tesztelés: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint
+   * Frontend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
+   * Backend: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
+   * Tesztelés: Bárdos Botond, Erdélyi Patrik, Kalas Gergő, Nagy Bálint, Koczka gergő
      
 ### 2.3 Ütemterv:
 
@@ -87,6 +87,11 @@
 * Postman
 * Git
 
+## 7. Adatbázis terv
+
+**Táblák**
+
+
 ## 8. Architekturális terv
 
 ### Webszerver:
@@ -132,7 +137,7 @@ például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával 
 Fizikai telepítési terv: 
 * Fizikai módon való telepítés nem szükséges az alkalmazásunk használatához.
   
-Szoftver telepítési terv: 
+Szoftver telepítési terv:
 
 ***A szoftver webes felületéhez csak egy böngésző telepítése szükséges.***
 
