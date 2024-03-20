@@ -52,6 +52,24 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 
 ## 9. Forgatókönyvek
 
+-**Forgatókönyv 1: Munkavállaló regisztrációja**
+    **A munkavállaló ellátogat az oldalra és kiválasztja a "Regisztráció" lehetőséget.**
+    **Kitölti az űrlapot, megadva a felhasználónevét, e-mail címét és jelszavát.**
+    **A rendszer elküld egy megerősítő e-mailt a regisztráció véglegesítéséhez.**
+    **A felhasználó megerősíti az e-mail címét a kapott link segítségével.**
+    **Sikeresen regisztrálva bejelentkezik a weboldalra.**
+
+-**Forgatókönyv 2: Munkáltató munkalehetőséget hirdet**
+    **A munkáltató bejelentkezik a weboldalra.**
+    **A "Munkalehetőség hirdetése" opciót választva kitölti az űrlapot a munkalehetőség részleteivel.**
+    **Az űrlap elküldése után a munkalehetőség megjelenik az idővonalon és a keresési eredmények között.**
+
+-**Forgatókönyv 3: Munkavállaló üzenetet küld egy munkáltatónak**
+    **A munkavállaló megtalál egy érdekes munkalehetőséget az idővonalon vagy a keresési eredmények között.**
+    **Kiválasztja a munkalehetőséget, majd az ott található "Kapcsolatfelvétel" gombot.**
+    **Kitölti az üzenet űrlapot és elküldi azt a munkáltatónak.**
+    **A munkáltató válaszol a felhasználónak a chat felületen keresztül.**
+
 ## 10. Funkció - követelmény megfeleltetése
 
 | Id | Követelmény | Funkció |
