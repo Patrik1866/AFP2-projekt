@@ -12,7 +12,24 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
+  
+  get currentUserName() {
+    if (typeof window !== 'undefined') {
+      let user = window.localStorage.getItem('user');
+      if (user) {
+        try {
+          let parsedUser = JSON.parse(user);
+          return parsedUser ? parsedUser.name : '';
+        } catch(e) {
+          console.error("Error parsing user data", e);
+        }
+      }
+    }
+    return '';
+  }
+  
+
   get isLoggedIn() {
     if (typeof window !== 'undefined') {
       return window.localStorage.getItem('user') !== null;
