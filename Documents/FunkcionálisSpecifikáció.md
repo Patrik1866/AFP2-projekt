@@ -48,3 +48,9 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 | K4 | ... | ... |
 
 ## 11 Fogalomszótár
+
+* Digitalizáció: A folyamat, amely során analóg adatokat, információkat vagy folyamatokat átalakítanak digitális formátumba, hogy azokat könnyebben tárolhassák, kezelhessék és továbbíthassák.
+* Munkakereső platform: Olyan webes vagy mobilalkalmazás, amely lehetővé teszi a munkaadók és munkavállalók számára, hogy találkozzanak és kommunikáljanak egymással, illetve megtalálják vagy kínálják a munkalehetőségeket.
+* Hálózatépítés: Az a tevékenység, amely során egy személy vagy vállalkozás kapcsolatokat alakít ki másokkal az üzleti vagy szakmai előnyök érdekében.
+* Kommunikációs felület: Olyan interfész vagy eszköz, amely lehetővé teszi a felhasználók számára a közvetlen kommunikációt, például üzenetküldést vagy csevegést.
+* Adminisztratív terhek: Azok a feladatok és kötelezettségek, amelyekkel egy személy vagy vállalatnak meg kell birkóznia az üzleti vagy adminisztratív folyamatok során.
