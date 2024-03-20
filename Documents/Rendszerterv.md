@@ -83,14 +83,32 @@ Bármely olyan eszköz, amelyen modern böngészők futtathatók, pl.: mobil esz
 
 ## 5. Funkcionális terv
 
-**Rendszerszereplők:**
+__Rendszerszereplők:__
+  - **Adminisztrátor**
   - **Felhasználó**
+      * Munkaadó Vállalkozás
+      * Munkakereső Személy
 
   **Rendszerhasználati esetek és lefutásaik:**
   - **Felhasználó**
-    - **Megtekintheti a bejegyzéseket a feed-en**
-    - **Törölheti/módosíthatja a korábban létrehozott bejegyzéseket**
-    - **Megtekintheti a munkalehetőségeket, elfogadhatja/elutasíthatja**
+    - Megtekintheti a bejegyzéseket a feed-en
+    - Új postokat tehet közzé
+    - Törölheti/módosíthatja a korábban létrehozott bejegyzéseit
+    - Közvetlen üzeneteket válthat a vele kapcsolatban álló más felhasználókkal
+    - Munkavállaló:
+      - Részletes keresést használhat a munkahelyek és elérhető pozícióik között
+      - Megtekintheti a munkalehetőségeket és jelentkezhet rájuk
+      - Elfogadhatja vagy elutasíthatja a kapott állásajánlatokat
+      - Kitöltheti és módosíthatja az adatlapját (CV, tapasztalatok, stb.)
+    - Munkáltató:
+      - Meghirdethet betöltetlen pozíciókat a munkakeresők számára
+      - Frissítheti a korábban kihirdetett munkalehetőségeit (pl.: szabad pozíciók száma)
+      - Keresést futtathat az elérhető munkavállalók között adott paraméterek szerint
+      - Állásajánlatot küldhet aktuálisan munkát kereső felhasználóknak
+      - Kitöltheti és módosíthatja a céges bemutatkozó oldalát
+  - **Adminisztrátor**
+    - Ellenőrzi, hogy a felhasználók betartják-e a weboldal Általános Felhasználási Feltételeit
+    - Az ÁFF-nek nem megfelelő bejegyzéseket törli és szükséges esetben megfelelő módon szankcionálja a felhasználót
 
 ## 6. Fizikai környezet
 
@@ -136,7 +154,6 @@ Bármely olyan eszköz, amelyen modern böngészők futtathatók, pl.: mobil esz
 * Az alkalmazás H2 adatbázist használ, amely egy in-memory adatbázis rendszer. Ez lehetővé teszi a fejlesztők számára, hogy gyorsan és egyszerűen hozzáférjenek az adatokhoz fejlesztés közben.
 ### A program elérése, kezelése:
 * Az alkalmazás elérhető a helyi számítógépen a böngészőn keresztül, a localhost címen. A felhasználók bejelentkezhetnek a rendszerbe a felhasználónevükkel és jelszavukkal.
-## 9. Adatbázis terv
 
 ## 10. Implementációs terv
 * A webes felület Angular keretrendszerben fog elkészülni, amely TypeScript nyelven íródott. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz.
