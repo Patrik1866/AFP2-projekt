@@ -33,6 +33,10 @@ Célunk egy egyszerűen kezelhető online platform létrehozása a munkakeresés
 |Felület|K7|Idővonal|A felhasználó álltal követett cégek munkalehetőségei jelennek meg.|
 |Felület|K8| Chat |A munkáltató és a munkavállaló közti kommunikációra szánt felület.|
 |Felület|K9|Kereső| A felhasználó az oldalon fellelhető cégek között tud keresni, akár név megadásával is.|
+| Backend | K10 |Teljesítmény, skálázhatóság|Gyors működés sok felhasználó egyidejű kiszolgálása során is.|
+| Biztonság | K11 |Biztonság|A felhasználók adatainak védelme illetéktelen hozzáféréstől.|
+| Frontend | K12 |Felhasználói élmény|Könnyen átlátható felhasználóbarát felület a gyorsabb kezelhetőség érdekében.|
+| Kompatibilitás | K13 |Kompatibilitás|Különböző eszközök és böngészők támogatása, reszponzív design.|
 
 ## 7. Fogalomszótár
 
