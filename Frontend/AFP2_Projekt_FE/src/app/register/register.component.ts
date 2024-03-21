@@ -6,6 +6,8 @@ import { routes } from '../app.routes';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { FormControl, Validator, Validators } from '@angular/forms';
+import { error } from 'node:console';
 
 @Component({
   selector: 'app-register',
@@ -16,13 +18,20 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   newUser: User = new User();
+  
 
   constructor(private http: HttpClient, private router: Router) { }
 
   register(event: Event, name: string, password: string, email: string, job: string, phone: string, picture: string, userCode: string): void {
     event.preventDefault();
+    if (password.length >= 5 && /\d/.test(password)) {
+      this.newUser.password = password;
+    } else {
+      window.alert("Invalid password");
+      return;
+    }
+
     this.newUser.name = name;
-    this.newUser.password = password;
     this.newUser.email = email;
     this.newUser.job = job;
     this.newUser.phone = phone;

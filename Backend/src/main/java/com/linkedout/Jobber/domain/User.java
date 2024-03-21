@@ -1,8 +1,11 @@
 package com.linkedout.Jobber.domain;
 
 import jakarta.persistence.*;
+import org.apache.catalina.valves.rewrite.InternalRewriteMap;
 
 import java.io.Serializable;
+import java.util.Locale;
+
 @Entity
 @Table(name = "users")
 public class User implements Serializable {
