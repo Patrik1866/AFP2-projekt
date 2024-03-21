@@ -30,8 +30,13 @@ export class RegisterComponent {
       window.alert("Invalid password");
       return;
     }
-
-    this.newUser.name = name;
+    if (name.length >= 4) {
+      name = name.charAt(0).toUpperCase() + name.slice(1);
+      this.newUser.name = name;
+    } else {
+      window.alert("Wrong format for the name");
+      return;
+    }
     this.newUser.email = email;
     this.newUser.job = job;
     this.newUser.phone = phone;
