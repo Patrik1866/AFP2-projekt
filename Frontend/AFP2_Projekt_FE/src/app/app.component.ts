@@ -10,11 +10,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
+import { JobpageComponent } from './jobpage/jobpage.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent, RouterModule, NavbarComponent, HomepageComponent, MainpageComponent, CommonModule, ProfileComponent],
+  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent, RouterModule, NavbarComponent, HomepageComponent, MainpageComponent, CommonModule, ProfileComponent, JobpageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
