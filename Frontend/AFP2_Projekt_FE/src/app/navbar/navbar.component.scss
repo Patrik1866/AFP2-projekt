@@ -2,11 +2,16 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: #f8f9fa;
+    background-color: #007bff;
+    border-radius: 6pt;
   }
   
   .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1.9em;
+    align-content: center;
+    color: white;
+    font-family: fantasy;
+    font-weight: 500;
   }
   
   .navbar-nav {
@@ -14,16 +19,21 @@
   }
   
   .nav-item {
-    margin-right: 1em;
+    font-size: 1.1em;
+    margin-right: 1.5em;
+    align-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
   }
   
   .nav-link {
-    color: #007bff;
+    color: white;
     text-decoration: none;
   }
   
   .nav-link:hover {
-    color: #0056b3;
+    color: #D3D3D3;
   }
   .nav-item.nav-link {
     cursor: pointer;
