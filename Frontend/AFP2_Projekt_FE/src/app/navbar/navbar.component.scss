@@ -1,41 +1,49 @@
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #007bff;
-    border-radius: 6pt;
-  }
-  
-  .navbar-brand {
-    font-size: 1.9em;
-    align-content: center;
-    color: white;
-    font-family: fantasy;
-    font-weight: 500;
-  }
-  
-  .navbar-nav {
-    display: flex;
-  }
-  
-  .nav-item {
-    font-size: 1.1em;
-    margin-right: 1.5em;
-    align-content: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: #D3D3D3;
-  }
-  .nav-item.nav-link {
-    cursor: pointer;
-  }
-    
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 6pt;
+}
+
+.navbar-brand {
+  font-size: 1.9em;
+  align-content: center;
+  color: white;
+  font-family: fantasy;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-item {
+  font-size: 1.1em;
+  margin-right: 1.5em;
+  align-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #D3D3D3;
+}
+
+.nav-item.nav-link {
+  cursor: pointer;
+}
