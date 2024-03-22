@@ -43,7 +43,7 @@
 }
 
 .login form button, .registerbutton {
-  padding: 15px; /* Increase padding */
+  padding: 15px;
   border-radius: 4px;
   border: none;
   background-color: #007bff;
@@ -51,8 +51,8 @@
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 1.2em; /* Increase font size */
-  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  transition: background-color 0.1s ease, transform 0.1s ease; /* Add transition for transform */
 }
 
 .login form button:hover, .registerbutton:hover {
@@ -71,4 +71,7 @@
   font-size: 1.2em; /* Increase font size */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+}
+.login form button:active, .registerbutton:active {
+  transform: scale(0.95); /* Shrink a bit on click */
 }
