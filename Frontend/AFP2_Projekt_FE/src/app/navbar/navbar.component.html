@@ -1,7 +1,7 @@
 <nav class="navbar">
   <a class="navbar-brand">LinkedOUT</a>
   <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/profile">{{currentUserName}}</a>
+    <a class="nav-item nav-link" id="profilename" *ngIf="isLoggedIn" routerLink="/profile">{{currentUserName}}</a>
     <a class="nav-item nav-link" *ngIf="isLoggedIn" routerLink="/jobpage">Jobs</a>
     <a class="nav-item nav-link" routerLink="/homepage">Home</a>
     <a class="nav-item nav-link" *ngIf="isLoggedIn" routerLink="/mainpage">Main</a>

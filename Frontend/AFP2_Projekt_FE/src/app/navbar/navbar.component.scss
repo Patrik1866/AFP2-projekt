@@ -49,3 +49,12 @@
 .nav-item.nav-link {
   cursor: pointer;
 }
+
+#profilename {
+  font-size: 16pt;
+  margin-left: 20px; /* Add margin to the left */
+  border: 2px solid white; /* Add border to the left */
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
