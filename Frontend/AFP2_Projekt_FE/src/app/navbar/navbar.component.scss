@@ -8,17 +8,19 @@
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-color: #007bff;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   border-radius: 6pt;
 }
 
+
+
 .navbar-brand {
   font-size: 2.2em;
   align-content: center;
   color: white;
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 500;
 }
 
@@ -30,14 +32,14 @@
   font-size: 1.1em;
   margin-right: 1.5em;
   align-content: center;
-  color: white;
+  color: rgb(230, 230, 230);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   transition: transform 0.2s; /* Add transition */
 }
 
 .nav-link {
-  color: white;
+  color: rgb(230, 230, 230);
   text-decoration: none;
 }
 
