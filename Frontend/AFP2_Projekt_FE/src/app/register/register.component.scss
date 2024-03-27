@@ -5,7 +5,7 @@
 }
 
 .register {
-  width: 45%; /* Increase width */
+  width: 35%; /* Increase width */
   margin: 0 auto;
   padding: 30px;
   border-radius: 4px;
@@ -13,7 +13,7 @@
   background-color: #007bff;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .register h2 {
@@ -22,6 +22,7 @@
   font-weight: 700;
   color: white; /* Change text color to white for better contrast */
   font-size: 2em; /* Increase font size */
+  margin-top: 1%;
 }
 
 .register form {
@@ -56,4 +57,19 @@
 
 .register form button:hover {
   background-color: #0056b3; /* Darker blue on hover */
+}
+
+.account-type {
+  margin: 1em 0;
+  font-size: 1.2em;
+  color: rgb(230, 230, 230);
+}
+
+.account-type label {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.account-type input[type="radio"] {
+  margin-right: 0.5em;
 }
