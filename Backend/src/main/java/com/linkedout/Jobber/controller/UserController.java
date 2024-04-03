@@ -35,13 +35,13 @@ public class UserController {
     public User updateUser(@PathVariable Long id, @RequestBody User updatedUser){
         User existingUser = userRepository.findById(id).orElseThrow(() ->
                 new RuntimeException("User not found with this ID:" + id));
-        existingUser.setName(existingUser.getName());
-        existingUser.setPassword(existingUser.getPassword());
-        existingUser.setEmail(existingUser.getEmail());
-        existingUser.setJob(existingUser.getJob());
-        existingUser.setPhone(existingUser.getPhone());
-        existingUser.setPicture(existingUser.getPicture());
-        existingUser.setUserCode(existingUser.getUserCode());
+        existingUser.setName(updatedUser.getName());
+        existingUser.setPassword(updatedUser.getPassword());
+        existingUser.setEmail(updatedUser.getEmail());
+        existingUser.setJob(updatedUser.getJob());
+        existingUser.setPhone(updatedUser.getPhone());
+        existingUser.setPicture(updatedUser.getPicture());
+        existingUser.setUserCode(updatedUser.getUserCode());
 
         return userRepository.save(existingUser);
     }
