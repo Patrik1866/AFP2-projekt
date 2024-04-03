@@ -1,1 +1,17 @@
-<p>profile works!</p>
+<div class="profile-card">
+    <h2>{{currentUserName}}</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" [(ngModel)]="currentUserName"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" [(ngModel)]="currentUserPassword"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" [(ngModel)]="currentUserEmail"><br>
+      <label for="job">Job:</label><br>
+      <input type="text" id="job" name="job" [(ngModel)]="currentUserJob"><br>
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="currentUserPhone"><br>
+      <input type="submit" value="Update Profile">
+    </form>
+  </div>
+  
