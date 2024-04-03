@@ -15,23 +15,20 @@ public class Feed implements Serializable {
     private String title;
     private String content;
     private Date date;
-
-    public String getFeedCode() {
-        return feedCode;
-    }
-
-    public void setFeedCode(String feedCode) {
-        this.feedCode = feedCode;
-    }
-
     private String feedCode;
-
     public Feed(){}
     public Feed(Long id, String title, String content,Date date,String feedCode){
         this.id = id;
         this.title = title;
         this.content = content;
         this.date = date;
+        this.feedCode = feedCode;
+    }
+
+    public String getFeedCode() {
+        return feedCode;
+    }
+    public void setFeedCode(String feedCode) {
         this.feedCode = feedCode;
     }
 

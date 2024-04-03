@@ -22,11 +22,31 @@ public class EmployerController {
     public List<Employer> getAllEmployers() {
         return employerRepository.findAll();
     }
-
     @PostMapping("/employers")
     public Employer createEmployers(@RequestBody Employer employer  ) {
         return employerRepository.save(employer);
     }
+    @DeleteMapping("/employers/{id}")
+    public void deleteEmployer(@PathVariable Long id){
+        employerRepository.deleteById(id);
+    }
+    @PutMapping("/employers/{id}")
+    public Employer updateEmployer(@PathVariable Long id, @RequestBody Employer updateEmployer){
+        Employer existingEmployer = employerRepository.findById(id).orElseThrow(() ->
+                new RuntimeException("Employer not found with this ID:" + id));
+        existingEmployer.setName(updateEmployer.getName());
+        existingEmployer.setPassword(updateEmployer.getPassword());
+        existingEmployer.setEmail(updateEmployer.getEmail());
+        existingEmployer.setJob(updateEmployer.getJob());
+        existingEmployer.setPhone(updateEmployer.getPhone());
+        existingEmployer.setPicture(updateEmployer.getPicture());
+        existingEmployer.setUserCode(updateEmployer.getUserCode());
+
+        return employerRepository.save(existingEmployer);
+    }
+
+
+
 
     // Add PUT and DELETE endpoints
 }
