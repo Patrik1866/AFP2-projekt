@@ -13,7 +13,7 @@
   background-color: #007bff;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  margin-top: 2%;
+  margin-top: 1.5%;
 }
 
 .register h2 {
@@ -21,8 +21,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: white; /* Change text color to white for better contrast */
-  font-size: 2em; /* Increase font size */
-  margin-top: 1%;
+  font-size: 1.9em; /* Increase font size */
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 
 .register form {
@@ -53,6 +54,7 @@
   font-weight: 700;
   font-size: 1.2em; /* Increase font size */
   transition: background-color 0.3s ease; /* Smooth transition */
+  margin-bottom: auto;
 }
 
 .register form button:hover {
@@ -63,6 +65,8 @@
   margin: 1em 0;
   font-size: 1.2em;
   color: rgb(230, 230, 230);
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .account-type label {
