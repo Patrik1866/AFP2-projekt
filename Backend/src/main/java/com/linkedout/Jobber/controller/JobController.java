@@ -12,7 +12,7 @@ import java.util.List;
 public class JobController {
     private final JobRepository jobRepository;
 
-    public JobController(JobRepository jobRepository){this.jobRepository = jobRepository}
+    public JobController(JobRepository jobRepository){this.jobRepository = jobRepository;}
 
     @GetMapping("/jobs")
     public List<Job> getJobs(){

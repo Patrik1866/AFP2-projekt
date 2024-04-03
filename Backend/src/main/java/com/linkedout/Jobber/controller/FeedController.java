@@ -26,11 +26,11 @@ public class FeedController {
     @PostMapping("/feed")
     public Feed createFeed(@RequestBody Feed feed){ return feedRepository.save(feed);}
 
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("/feed/{id}")
     public void deleteFeed(@PathVariable Long id){
         feedRepository.deleteById(id);
     }
-    @PutMapping("/users/{id}")
+    @PutMapping("/feed/{id}")
     public Feed updateFeed(@PathVariable Long id, @RequestBody Feed updatedTitle){
         Feed existingFeed = feedRepository.findById(id).orElseThrow(() ->
                 new RuntimeException("Feed not found with this ID:" + id));
