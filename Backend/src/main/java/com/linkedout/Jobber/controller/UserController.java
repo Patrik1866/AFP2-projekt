@@ -1,5 +1,6 @@
 package com.linkedout.Jobber.controller;
 
+import com.linkedout.Jobber.domain.Employer;
 import com.linkedout.Jobber.domain.User;
 import com.linkedout.Jobber.repo.UserRepository;
 import org.springframework.web.bind.annotation.*;
@@ -26,5 +27,23 @@ public class UserController {
         return userRepository.save(user);
     }
 
-    // Add PUT and DELETE endpoints
+    @DeleteMapping("/users/{id}")
+    public void deleteUser(@PathVariable Long id){
+        userRepository.deleteById(id);
+    }
+    @PutMapping("/users/{id}")
+    public User updateUser(@PathVariable Long id, @RequestBody User updatedUser){
+        User existingUser = userRepository.findById(id).orElseThrow(() ->
+                new RuntimeException("User not found with this ID:" + id));
+        existingUser.setName(existingUser.getName());
+        existingUser.setPassword(existingUser.getPassword());
+        existingUser.setEmail(existingUser.getEmail());
+        existingUser.setJob(existingUser.getJob());
+        existingUser.setPhone(existingUser.getPhone());
+        existingUser.setPicture(existingUser.getPicture());
+        existingUser.setUserCode(existingUser.getUserCode());
+
+        return userRepository.save(existingUser);
+    }
+
 }
