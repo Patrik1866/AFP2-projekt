@@ -32,7 +32,8 @@ export class RegisterComponent {
     phone: string,
     picture: string,
     userCode: string,
-    accountType: string
+    accountTypeStandard: boolean,
+    accountTypeEmployer: boolean
   ): void {
     event.preventDefault();
     if (password.length >= 5 && /\d/.test(password)) {
@@ -49,7 +50,7 @@ export class RegisterComponent {
       return;
     }
 
-    if (accountType === 'standard') {
+    if (accountTypeStandard) {
       this.newUser.email = email;
       this.newUser.job = job;
       this.newUser.phone = phone;
@@ -60,7 +61,7 @@ export class RegisterComponent {
         console.log('User registered successfully');
         this.router.navigate(['/login']);
       });
-    } else if (accountType === 'employer') {
+    } else if (accountTypeEmployer) {
       this.newEmployer.email = email;
       this.newEmployer.job = job;
       this.newEmployer.phone = phone;
