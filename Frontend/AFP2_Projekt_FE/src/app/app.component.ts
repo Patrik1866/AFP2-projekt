@@ -11,11 +11,12 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
 import { JobpageComponent } from './jobpage/jobpage.component';
+import { FreelancerspageComponent } from './freelancerspage/freelancerspage.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent, RouterModule, NavbarComponent, HomepageComponent, MainpageComponent, CommonModule, ProfileComponent, JobpageComponent],
+  imports: [RouterOutlet, HttpClientModule, LoginComponent, RegisterComponent, RouterModule, NavbarComponent, HomepageComponent, MainpageComponent, CommonModule, ProfileComponent, JobpageComponent, FreelancerspageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

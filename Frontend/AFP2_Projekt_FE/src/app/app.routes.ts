@@ -6,6 +6,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { JobpageComponent } from './jobpage/jobpage.component';
+import { FreelancerspageComponent } from './freelancerspage/freelancerspage.component';
 
 export const routes: Routes = [
     { path: '', component: HomepageComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     { path: 'homepage', component: HomepageComponent },
     { path: 'mainpage', component: MainpageComponent },
     {path: 'profile', component: ProfileComponent},
-    {path: 'jobpage', component: JobpageComponent}
+    {path: 'jobpage', component: JobpageComponent},
+    {path: 'freelancerspage', component: FreelancerspageComponent}
   ];
