@@ -41,6 +41,7 @@ public class EmployerController {
         existingEmployer.setPhone(updateEmployer.getPhone());
         existingEmployer.setPicture(updateEmployer.getPicture());
         existingEmployer.setUserCode(updateEmployer.getUserCode());
+        existingEmployer.setAccountType(updateEmployer.isAccountType());
 
         return employerRepository.save(existingEmployer);
     }

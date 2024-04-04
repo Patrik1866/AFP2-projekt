@@ -7,7 +7,8 @@ export class Employer {
         public job?: string,
         public phone?: string,
         public picture?: string,
-        public userCode?: string
+        public userCode?: string,
+        public accountType?: boolean,
       ) { }
   }
   

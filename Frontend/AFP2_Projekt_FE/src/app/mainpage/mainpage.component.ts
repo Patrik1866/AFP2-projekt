@@ -22,6 +22,9 @@ export class MainpageComponent implements OnInit{
     if (!user) {
       this.router.navigate(['/login']);
     }
+    else{
+      console.log(user);
+    }
   }
 
   loadPosts(): void {

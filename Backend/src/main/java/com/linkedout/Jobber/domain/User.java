@@ -20,9 +20,10 @@ public class User implements Serializable {
     private String phone;
     private String picture;
     private String userCode;
+    private boolean accountType;
 
     public User(){}
-    public User(String name,String password,String email,String job,String phone,String picture,String userCode){
+    public User(String name,String password,String email,String job,String phone,String picture,String userCode, boolean accountType){
         this.name = name;
         this.password = password;
         this.email = email;
@@ -30,6 +31,7 @@ public class User implements Serializable {
         this.phone = phone;
         this.picture = picture;
         this.userCode = userCode;
+        this.accountType = accountType;
     }
     public Long getId(){
         return id;
@@ -78,5 +80,13 @@ public class User implements Serializable {
     }
     public void setUserCode(String userCode){
         this.userCode = userCode;
+    }
+
+    public boolean isAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(boolean accountType) {
+        this.accountType = accountType;
     }
 }

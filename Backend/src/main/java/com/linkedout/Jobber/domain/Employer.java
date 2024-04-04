@@ -17,9 +17,10 @@ public class Employer implements Serializable {
     private String phone;
     private String picture;
     private String userCode;
+    private boolean accountType;
 
     public Employer(){}
-    public Employer(String name,String password,String email,String job,String phone,String picture,String userCode){
+    public Employer(String name,String password,String email,String job,String phone,String picture,String userCode, boolean accountType){
         this.name = name;
         this.password = password;
         this.email = email;
@@ -27,6 +28,7 @@ public class Employer implements Serializable {
         this.phone = phone;
         this.picture = picture;
         this.userCode = userCode;
+        this.accountType = accountType;
     }
     public Long getId(){
         return id;
@@ -75,5 +77,13 @@ public class Employer implements Serializable {
     }
     public void setUserCode(String userCode){
         this.userCode = userCode;
+    }
+
+    public boolean isAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(boolean accountType) {
+        this.accountType = accountType;
     }
 }

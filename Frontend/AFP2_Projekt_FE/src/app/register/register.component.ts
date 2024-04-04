@@ -38,6 +38,7 @@ export class RegisterComponent {
     event.preventDefault();
     if (password.length >= 5 && /\d/.test(password)) {
       this.newUser.password = password;
+      this.newEmployer.password = password;
     } else {
       window.alert('Invalid password');
       return;
@@ -45,17 +46,19 @@ export class RegisterComponent {
     if (name.length >= 4) {
       name = name.charAt(0).toUpperCase() + name.slice(1);
       this.newUser.name = name;
+      this.newEmployer.name = name;
     } else {
       window.alert('Wrong format for the name');
       return;
     }
-
+  
     if (accountTypeStandard) {
       this.newUser.email = email;
       this.newUser.job = job;
       this.newUser.phone = phone;
       this.newUser.picture = picture;
       this.newUser.userCode = userCode;
+      this.newUser.accountType = true; 
       this.addUser(this.newUser, '/users').subscribe((user) => {
         window.alert('User registered successfully');
         console.log('User registered successfully');
@@ -67,6 +70,7 @@ export class RegisterComponent {
       this.newEmployer.phone = phone;
       this.newEmployer.picture = picture;
       this.newEmployer.userCode = userCode;
+      this.newEmployer.accountType = false;
       this.addEmployer(this.newEmployer, '/employers').subscribe((employer) => {
         window.alert('Employer registered successfully');
         console.log('Employer registered successfully');
@@ -74,6 +78,7 @@ export class RegisterComponent {
       });
     }
   }
+  
 
   addUser(user: User, endpoint: string): Observable<User> {
     return this.http.post<User>(`http://localhost:8080/afp2API/users`, user);

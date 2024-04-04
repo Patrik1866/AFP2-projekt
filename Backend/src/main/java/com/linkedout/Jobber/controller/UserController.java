@@ -42,6 +42,7 @@ public class UserController {
         existingUser.setPhone(updatedUser.getPhone());
         existingUser.setPicture(updatedUser.getPicture());
         existingUser.setUserCode(updatedUser.getUserCode());
+        existingUser.setAccountType(updatedUser.isAccountType());
 
         return userRepository.save(existingUser);
     }
