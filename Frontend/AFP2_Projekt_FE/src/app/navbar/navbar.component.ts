@@ -29,6 +29,21 @@ export class NavbarComponent {
     return '';
   }
   
+  get currentUserAccountType() {
+    if (typeof window !== 'undefined') {
+      let user = window.localStorage.getItem('user');
+      if (user) {
+        try {
+          let parsedUser = JSON.parse(user);
+          return parsedUser ? parsedUser.accountType : null;
+        } catch(e) {
+          console.error("Error parsing user data", e);
+        }
+      }
+    }
+    return null;
+  }
+  
 
   get isLoggedIn() {
     if (typeof window !== 'undefined') {

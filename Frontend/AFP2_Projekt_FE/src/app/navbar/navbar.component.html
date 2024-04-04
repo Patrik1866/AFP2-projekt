@@ -2,9 +2,10 @@
   <a class="navbar-brand">LinkedOUT</a>
   <div class="navbar-nav">
     <a class="nav-item nav-link" id="profilename" *ngIf="isLoggedIn" routerLink="/profile">{{currentUserName}}</a>
-    <a class="nav-item nav-link" *ngIf="isLoggedIn" routerLink="/jobpage">Jobs</a>
+    <a class="nav-item nav-link" *ngIf="isLoggedIn && currentUserAccountType == true" routerLink="/jobpage">Jobs</a>
+    <a class="nav-item nav-link" *ngIf="isLoggedIn && currentUserAccountType == false" >Freelancers</a>
     <a class="nav-item nav-link" routerLink="/homepage">Home</a>
-    <a class="nav-item nav-link" *ngIf="isLoggedIn" routerLink="/mainpage">Main</a>
+    <a class="nav-item nav-link" *ngIf="isLoggedIn" routerLink="/mainpage">Feed</a>
     <a class="nav-item nav-link" *ngIf="!isLoggedIn" routerLink="/login">Login</a>
     <a class="nav-item nav-link" *ngIf="!isLoggedIn" routerLink="/register">Register</a>
     <a class="nav-item nav-link" *ngIf="isLoggedIn" (click)="logout()">Logout</a>
