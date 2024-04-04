@@ -1,5 +1,7 @@
 <nav class="navbar">
-  <a class="navbar-brand">LinkedOUT</a>
+  <a class="navbar-brand">
+    <img class="brandlogo" src="assets/brandLOGO.png" alt="Brand Logo" height="40" width="40"> LinkedOUT
+  </a>
   <div class="navbar-nav">
     <a class="nav-item nav-link" id="profilename" *ngIf="isLoggedIn" routerLink="/profile">{{currentUserName}}</a>
     <a class="nav-item nav-link" *ngIf="isLoggedIn && currentUserAccountType == true" routerLink="/jobpage">Jobs</a>

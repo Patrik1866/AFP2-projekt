@@ -23,6 +23,13 @@
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandlogo{
+  margin-right: 10px;
 }
 
 .navbar-nav {
@@ -68,4 +75,3 @@
   border-radius: 10px;
   animation: moving-border 3s linear infinite;
 }
-
