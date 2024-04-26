@@ -58,30 +58,29 @@ export class MainpageComponent implements OnInit{
     })
   }
 
-  postContent(content: string): void {
+  postContent(title: string, content: string): void {
     let userItem = localStorage.getItem('user');
-    if (userItem) {
-    } else {
+    if (!userItem) {
       console.error('User data not found in local storage');
+      return;
     }
     this.newFeed.username = this.currentuser.name;
-    this.newFeed.title = "teszt";
+    this.newFeed.title = title;
     this.newFeed.content = content.toString();
     this.newFeed.date = new Date();
     this.newFeed.feedCode = Math.random().toString(36).substring(2,15),
-
+  
     this.addPost(this.newFeed, '/feed/addfeed').subscribe({
       next: (feed) => {
         console.log(feed);
-        
         this.loadPosts();
       },
       error: (error) => {
-        error
+        console.error(error);
       }
-    }
-    )
+    })
   }
+  
 
   addPost(feed: Feed, endpoint: string): Observable<Feed>{
       return this.http.post<Feed>('http://localhost:8080/afp2API/feed/addfeed', feed);

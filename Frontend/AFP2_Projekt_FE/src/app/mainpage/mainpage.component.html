@@ -1,6 +1,7 @@
 <div class="container" style="display: flex; justify-content: center;">
-  <form id="postform" (submit)="postContent(content.value)">
-    <textarea #content class="feedarea" id="feedpost" cols="30" rows="10"></textarea>
+  <form id="postform" (submit)="postContent(title.value, content.value)">
+    <input #title class="titlearea" id="feedtitle" type="text" placeholder="Title" />
+    <textarea #content class="feedarea" id="feedpost" cols="30" rows="10" placeholder="Type what you want here..."></textarea>
     <button class="postButton" type="submit">Post</button>
   </form>
   <div id="feedsposts" class="posts" style="display: flex; flex-direction: column; align-items: center;">
