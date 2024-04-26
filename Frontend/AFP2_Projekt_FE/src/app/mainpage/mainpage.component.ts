@@ -1,7 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Post } from '../post';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Feed } from '../feed';
+import { response } from 'express';
+import { error, time, timeStamp } from 'console';
+import { User } from '../user';
+import { json } from 'stream/consumers';
+import { Observable, timestamp } from 'rxjs';
+import { FormControl, Validator, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-mainpage',
@@ -10,36 +18,102 @@ import { Router } from '@angular/router';
   templateUrl: './mainpage.component.html',
   styleUrl: './mainpage.component.scss'
 })
+
 export class MainpageComponent implements OnInit{
 
-  posts: Post[] = [];
+  newFeed: Feed = new Feed();
+  posts: Feed[] = [];
+  content: string = '';
+  currentuser: any;
+  popup: boolean = false;
+  selectedPost: Feed = new Feed();
+  
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loadPosts();
-    const user = localStorage.getItem('user');
-    if (!user) {
-      this.router.navigate(['/login']);
-    }
-    else{
-      console.log(user);
+    if (typeof localStorage !== 'undefined') {
+      const user = localStorage.getItem('user');
+      if (!user) {
+        this.router.navigate(['/login']);
+      }
+      else{
+        console.log(user);
+        this.currentuser = JSON.parse(user);
+      }
     }
   }
+
+ 
 
   loadPosts(): void {
-    // Here you would typically make a HTTP request to your backend to fetch the posts
-    // For simplicity, we'll just use some dummy data
-    this.posts = [
-      { title: 'Post 1', content: 'A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.', date: new Date('2022-01-01') },
-      { title: 'Post 2', content: 'I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.', date: new Date('2022-01-02') },
-      { title: 'Post 3', content: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary.', date: new Date('2022-01-03') },
-      { title: 'Post 4', content: 'One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.', date: new Date('2022-01-04') },
-      { title: 'Post 5', content: 'The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.', date: new Date('2022-01-05') },
-      { title: 'Post 6', content: 'What happened to me? he thought. It wasnt a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.', date: new Date('2022-01-06') },
-      // Add more posts as needed
-    ]
-    ;
+    this.http.get<Feed[]>('http://localhost:8080/afp2API/feed/getfeed').subscribe({
+      next: (data) => {
+        this.posts = data;
+      },
+      error: (error) => {
+        console.error('error',error)
+      }
+    })
   }
 
+  postContent(content: string): void {
+    let userItem = localStorage.getItem('user');
+    if (userItem) {
+    } else {
+      console.error('User data not found in local storage');
+    }
+    this.newFeed.username = this.currentuser.name;
+    this.newFeed.title = "teszt";
+    this.newFeed.content = content.toString();
+    this.newFeed.date = new Date();
+    this.newFeed.feedCode = Math.random().toString(36).substring(2,15),
+
+    this.addPost(this.newFeed, '/feed/addfeed').subscribe({
+      next: (feed) => {
+        console.log(feed);
+        
+        this.loadPosts();
+      },
+      error: (error) => {
+        error
+      }
+    }
+    )
+  }
+
+  addPost(feed: Feed, endpoint: string): Observable<Feed>{
+      return this.http.post<Feed>('http://localhost:8080/afp2API/feed/addfeed', feed);
+  }
+
+  deletePost(feed: Feed): void{
+    this.http.delete<Feed>('http://localhost:8080/afp2API/feed/' + feed.feedCode).subscribe({
+      next: (response) => {
+        console.log(response);
+        this.loadPosts();
+      },
+      error: (error) => {
+        error;
+      }
+    });
+  }
+  updatePost(feed: Feed,title:string,content: string): void{
+    const updatedPost = {
+      title: title,
+      content: content
+    }
+    
+    this.http.put<Feed>('http://localhost:8080/afp2API/feed/' + feed.feedCode, updatedPost).subscribe({
+      next: (response) => {
+        console.log(response);
+        this.loadPosts();
+      },
+      error: (error) => {
+        console.error(error);
+      }
+    })
+  }
+  
 }
+  

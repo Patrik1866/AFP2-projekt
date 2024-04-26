@@ -1,25 +1,33 @@
 .feed {
-  width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.post {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 100%;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #ffffff;
+  width: 87%;
+  border-radius: 10px;
+  margin:20px 0;
+  padding: 30px;
+  background-color: aliceblue;
 }
 
-.post h2 {
+.posts {
+  padding-top: 0px;
+  flex: 3;
+  resize: none !important;
+  align-items: center;
+  width: 15%;
+  border-radius: 3px;
+  margin: auto;
+  padding: 30px; /* Increased padding to make the post boxes bigger */
+}
+
+.feed h1 {
   margin: 0;
   color: #333;
   font-size: 24px;
+}
+.feed h2{
+  margin: 0;
+  color: #666;
+  font-size: 18px;
 }
 
 .content {
@@ -31,4 +39,144 @@
   margin-top: 30px;
   font-size: small;
   color: #007bff;
+}
+.div{
+  justify-content: center;
+}
+.feedarea{
+  resize: none !important;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: start;
+  width: 100%;
+  height: 25%;
+  border-radius: 10px;
+  border: #000000;
+  background-color: aliceblue;
+}
+.postButton{
+  margin-top: 10px;
+  margin-left: 30%;
+  height: 30px;
+  width: 40%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background-color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14pt;
+}
+
+#postform{
+  resize: none !important;
+  flex: 1;
+  margin-top: 43px;
+  margin-right: 20px;
+  width: 40px;
+  height: 45%;
+  
+}
+.container{
+  resize: none !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.deleteButton{
+  border: none;
+  background-color: pink;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 15px;
+}
+.editButton{
+  border: none;
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.editButton:hover{
+  border: none;
+  background-color: lime;
+}
+.deleteButton:hover{
+  border: none;
+  background-color: rgb(216, 30, 30);
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: 0,0,0,0.7;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup{
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2{
+  margin-top: 0;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  text-align: center;
+}
+
+.popup .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover{
+  color: #06D85F;
+  cursor: pointer;
+}
+
+#titleEditor{
+  margin-top: 15px;
+  border-color: aliceblue;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px rgba(28, 96, 178, 0.2);
+  outline: none;
+}
+#contentEditor{
+  outline: none;
+  resize: none;
+  margin-top: 10px;
+  border-color: aliceblue;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px rgba(28, 96, 178, 0.2);
+}
+#saveChangeButton{
+  border: none;
+  resize: none;
+  outline: none;
+  margin-top: 10px;
+  border-color: aliceblue;
+  background-color: rgb(81, 118, 151);
+  border-radius: 4px;
+  box-shadow: 10px 3px 3px rgba(28, 96, 178, 0.2);
+}
+#saveChangeButton:hover{
+  background-color: rgb(34, 32, 183);
 }

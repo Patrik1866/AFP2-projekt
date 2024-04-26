@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { User } from '../user';
 
 @Component({
   selector: 'app-freelancerspage',
@@ -9,18 +11,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './freelancerspage.component.scss'
 })
 export class FreelancerspageComponent implements OnInit{
-  freelancers = [
-    {name: 'Freelancer 1', job: 'Job 1', email: 'email1@example.com', phone: '123-456-7890'},
-    {name: 'Freelancer 2', job: 'Job 2', email: 'email2@example.com', phone: '123-456-7891'},
-    {name: 'Freelancer 3', job: 'Job 3', email: 'email3@example.com', phone: '123-456-7892'},
-    {name: 'Freelancer 4', job: 'Job 4', email: 'email4@example.com', phone: '123-456-7893'},
-    {name: 'Freelancer 5', job: 'Job 5', email: 'email5@example.com', phone: '123-456-7894'},
-    {name: 'Freelancer 6', job: 'Job 6', email: 'email6@example.com', phone: '123-456-7895'},
-    // Add more freelancers as needed
-  ];
+  freelancers: User[] = [];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get<User[]>('http://localhost:8080/afp2API/users').subscribe(data => {
+      this.freelancers = data;
+    });
   }
 }

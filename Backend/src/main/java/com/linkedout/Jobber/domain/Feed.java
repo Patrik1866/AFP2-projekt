@@ -3,6 +3,7 @@ package com.linkedout.Jobber.domain;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.Date;
 
 @Entity
@@ -12,13 +13,24 @@ public class Feed implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long id;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    private String username;
     private String title;
     private String content;
     private Date date;
     private String feedCode;
     public Feed(){}
-    public Feed(Long id, String title, String content,Date date,String feedCode){
+    public Feed(Long id, String username, String title, String content,Date date,String feedCode){
         this.id = id;
+        this.username = username;
         this.title = title;
         this.content = content;
         this.date = date;
