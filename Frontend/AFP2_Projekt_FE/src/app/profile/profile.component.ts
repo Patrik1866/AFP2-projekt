@@ -1,87 +1,90 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule, FormsModule],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrls: ['./profile.component.scss'],
+  imports: [CommonModule, FormsModule]
 })
 export class ProfileComponent {
-  get currentUserName() {
-    if (typeof window !== 'undefined') {
-      let user = window.localStorage.getItem('user');
-      if (user) {
-        try {
-          let parsedUser = JSON.parse(user);
-          return parsedUser ? parsedUser.name : '';
-        } catch(e) {
-          console.error("Error parsing user data", e);
-        }
-      }
-    }
-    return '';
+  user = {
+    id: '',
+    name: '',
+    email: '',
+    job: '',
+    phone: '',
+    password: ''
+  };
+
+isUser = true;
+
+  employer = {
+    id: '',
+    name: '',
+    password: '',
+    email: '',
+    job: '',
+    phone: '',
+  };
+
+  constructor(private http: HttpClient) {
+    this.loadUserData();
   }
-  get currentUserEmail() {
+
+  loadUserData() {
     if (typeof window !== 'undefined') {
-      let user = window.localStorage.getItem('user');
-      if (user) {
+      const userData = window.localStorage.getItem('user');
+      const employerData = window.localStorage.getItem('employer');
+      if (userData) {
         try {
-          let parsedUser = JSON.parse(user);
-          return parsedUser ? parsedUser.email : '';
+          this.user = JSON.parse(userData);
+          this.isUser = true;
         } catch(e) {
           console.error("Error parsing user data", e);
         }
       }
-    }
-    return '';
-  }
-  
-  get currentUserJob() {
-    if (typeof window !== 'undefined') {
-      let user = window.localStorage.getItem('user');
-      if (user) {
+      if (employerData) {
         try {
-          let parsedUser = JSON.parse(user);
-          return parsedUser ? parsedUser.job : '';
+          this.employer = JSON.parse(employerData);
+          this.isUser = false;
         } catch(e) {
-          console.error("Error parsing user data", e);
+          console.error("Error parsing employer data", e);
         }
       }
+      console.log(userData);
     }
-    return '';
-  }
-  
-  get currentUserPhone() {
-    if (typeof window !== 'undefined') {
-      let user = window.localStorage.getItem('user');
-      if (user) {
-        try {
-          let parsedUser = JSON.parse(user);
-          return parsedUser ? parsedUser.phone : '';
-        } catch(e) {
-          console.error("Error parsing user data", e);
-        }
-      }
-    }
-    return '';
   }
   
-  get currentUserPassword() {
-    if (typeof window !== 'undefined') {
-      let user = window.localStorage.getItem('user');
-      if (user) {
-        try {
-          let parsedUser = JSON.parse(user);
-          return parsedUser ? parsedUser.password : '';
-        } catch(e) {
-          console.error("Error parsing user data", e);
+
+  updateUserData() {
+    this.http.put<any>(`http://localhost:8080/afp2API/users/${this.user.id}`, this.user)
+      .subscribe(
+        response => {
+          console.log('User data updated successfully:', response);
+          alert('Profile updated successfully!');
+        },
+        error => {
+          console.error('Error updating user data:', error);
+          alert('Error updating profile. Please try again.');
         }
-      }
-    }
-    return '';
+      );
   }
-  
+
+  updateEmployerData() {
+    this.http.put<any>(`http://localhost:8080/afp2API/employers/${this.employer.id}`, this.employer)
+      .subscribe(
+        response => {
+          console.log('Employer data updated successfully:', response);
+          alert('Profile updated successfully!');
+        },
+        error => {
+          console.error('Error updating employer data:', error);
+          alert('Error updating profile. Please try again.');
+        }
+      );
+  }
 }
