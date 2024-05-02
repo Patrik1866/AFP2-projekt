@@ -74,3 +74,73 @@
     transform: scale(0.95);
   }
   
+  .job-card {
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #007bff;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top: 1%;
+  }
+  
+  .job-card h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  .job-card form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  
+  .job-card form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 15pt;
+  }
+  
+  .job-card form input[type="text"],
+  .job-card form input[type="password"],
+  .job-card form input[type="email"],
+  .job-card form input[type="tel"],
+  .job-card form textarea {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  
+  .job-card form input[type="submit"] {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+  }
+  
+  .job-card form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .job-card form input[type="submit"]:active {
+    transform: scale(0.95);
+  }

@@ -31,4 +31,22 @@
       <input type="submit" value="Update">
     </form>
   </div>
+
+  <div class="job-card" *ngIf="currentUserAccountType == false">
+    <h2>Add New Job:</h2>
+    <form (submit)="createJob()">
+      <label for="company">Company:</label><br>
+      <input type="text" id="company" name="company" [(ngModel)]="newJob.company"><br>
+      <label for="jobTitle">Job Title:</label><br>
+      <input type="text" id="jobTitle" name="jobTitle" [(ngModel)]="newJob.jobTitle"><br>
+      <label for="jobDescription">Job Description:</label><br>
+      <textarea id="jobDescription" name="jobDescription" [(ngModel)]="newJob.jobDescription"></textarea><br>
+      <label for="salary">Salary:</label><br>
+      <input type="number" id="salary" name="salary" [(ngModel)]="newJob.salary"><br>
+      <input type="submit" value="Add Job">
+    </form>
+  </div>
+  
+
+  
   

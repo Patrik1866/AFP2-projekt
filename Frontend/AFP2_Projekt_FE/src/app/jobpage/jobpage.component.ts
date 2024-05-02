@@ -1,26 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-jobpage',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './jobpage.component.html',
-  styleUrl: './jobpage.component.scss'
+  styleUrl: './jobpage.component.scss',
+  imports: [CommonModule]
 })
 export class JobpageComponent implements OnInit {
-  jobs = [
-    {company: 'Company 1', jobTitle: 'Job Title 1', jobDescription: 'Job Description 1', salary: 'Salary 1'},
-    {company: 'Company 2', jobTitle: 'Job Title 2', jobDescription: 'Job Description 2', salary: 'Salary 2'},
-    {company: 'Company 3', jobTitle: 'Job Title 3', jobDescription: 'Job Description 3', salary: 'Salary 3'},
-    {company: 'Company 4', jobTitle: 'Job Title 4', jobDescription: 'Job Description 4', salary: 'Salary 4'},
-    {company: 'Company 5', jobTitle: 'Job Title 5', jobDescription: 'Job Description 5', salary: 'Salary 5'},
-    {company: 'Company 6', jobTitle: 'Job Title 6', jobDescription: 'Job Description 6', salary: 'Salary 6'},
-    // Add more jobs as needed
-  ];
+  jobs: any[] = []; // Initialize jobs array to store fetched jobs
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.fetchJobs(); // Fetch jobs when component initializes
+  }
+
+  fetchJobs() {
+    this.http.get<any[]>('http://localhost:8080/afp2API/jobs')
+      .subscribe(
+        response => {
+          console.log('Fetched jobs successfully:', response);
+          this.jobs = response; // Assign fetched jobs to the jobs array
+        },
+        error => {
+          console.error('Error fetching jobs:', error);
+          // Handle error, such as displaying an error message to the user
+        }
+      );
   }
 }

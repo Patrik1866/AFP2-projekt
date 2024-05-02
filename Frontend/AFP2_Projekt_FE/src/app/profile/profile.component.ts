@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Job } from '../job';
 
 @Component({
   selector: 'app-profile',
@@ -30,6 +31,8 @@ export class ProfileComponent {
     job: '',
     phone: '',
   };
+
+  newJob: Job = new Job(); // Initialize a new job object
 
   constructor(private http: HttpClient) {
     this.loadUserData();
@@ -102,6 +105,22 @@ export class ProfileComponent {
         error => {
           console.error('Error updating employer data:', error);
           alert('Error updating profile. Please try again.');
+        }
+      );
+  }
+
+  createJob() {
+    this.http.post<any>('http://localhost:8080/afp2API/jobs', this.newJob)
+      .subscribe(
+        response => {
+          console.log('Job added successfully:', response);
+          alert('Job added successfully!');
+          // Optionally, you can reset the form fields after successful submission
+          this.newJob = new Job();
+        },
+        error => {
+          console.error('Error adding job:', error);
+          alert('Error adding job. Please try again.');
         }
       );
   }
