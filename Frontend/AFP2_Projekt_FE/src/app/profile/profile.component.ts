@@ -20,7 +20,7 @@ export class ProfileComponent {
     password: ''
   };
 
-isUser = true;
+  isUser = true;
 
   employer = {
     id: '',
@@ -33,6 +33,21 @@ isUser = true;
 
   constructor(private http: HttpClient) {
     this.loadUserData();
+  }
+
+  get currentUserAccountType() {
+    if (typeof window !== 'undefined') {
+      let user = window.localStorage.getItem('user');
+      if (user) {
+        try {
+          let parsedUser = JSON.parse(user);
+          return parsedUser ? parsedUser.accountType : null;
+        } catch(e) {
+          console.error("Error parsing user data", e);
+        }
+      }
+    }
+    return null;
   }
 
   loadUserData() {
@@ -55,7 +70,6 @@ isUser = true;
           console.error("Error parsing employer data", e);
         }
       }
-      console.log(userData);
     }
   }
   
@@ -66,6 +80,8 @@ isUser = true;
         response => {
           console.log('User data updated successfully:', response);
           alert('Profile updated successfully!');
+          // Update local storage after successful update
+          window.localStorage.setItem('user', JSON.stringify(this.user));
         },
         error => {
           console.error('Error updating user data:', error);
@@ -80,6 +96,8 @@ isUser = true;
         response => {
           console.log('Employer data updated successfully:', response);
           alert('Profile updated successfully!');
+          // Update local storage after successful update
+          window.localStorage.setItem('employer', JSON.stringify(this.employer));
         },
         error => {
           console.error('Error updating employer data:', error);
