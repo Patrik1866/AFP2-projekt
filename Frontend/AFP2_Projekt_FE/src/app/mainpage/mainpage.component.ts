@@ -65,10 +65,17 @@ export class MainpageComponent implements OnInit{
       return;
     }
 
-    if (!this.checkTitleNotEmpty(title)) {
+    if (!this.checkNotEmpty(title)) {
       alert('Post title cannot be empty!');
       return;
     }
+
+    if(!this.checkNotEmpty(content)){
+      alert('Post content cannot be empty!');
+      return;
+    }
+
+
     this.newFeed.username = this.currentuser.name;
     this.newFeed.title = title;
     this.newFeed.content = content.toString();
@@ -86,7 +93,7 @@ export class MainpageComponent implements OnInit{
     })
   }
   
-  checkTitleNotEmpty(title: string): boolean {
+  checkNotEmpty(title: string): boolean {
     return !!title.trim(); 
   }
 
