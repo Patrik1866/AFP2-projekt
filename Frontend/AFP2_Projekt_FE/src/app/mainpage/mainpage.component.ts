@@ -29,6 +29,9 @@ export class MainpageComponent implements OnInit{
   selectedPost: Feed = new Feed();
   
 
+  titleFormControl = new FormControl('', [Validators.required]);
+  contentFormControl = new FormControl('', [Validators.maxLength(5000)]);
+
   constructor(private router: Router,private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -75,6 +78,10 @@ export class MainpageComponent implements OnInit{
       return;
     }
 
+    if (this.contentFormControl.invalid || content.length > 5000) {
+      alert('Post content cannot exceed 5000 characters!'); // Alert if content exceeds 5000 characters
+      return;
+    }
 
     this.newFeed.username = this.currentuser.name;
     this.newFeed.title = title;
@@ -128,9 +135,5 @@ export class MainpageComponent implements OnInit{
       }
     })
   }
-
-
-  
-  
 }
   
