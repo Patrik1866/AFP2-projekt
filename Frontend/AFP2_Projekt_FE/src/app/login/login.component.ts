@@ -31,28 +31,35 @@ export class LoginComponent {
     });
   }
 
-  login(event: Event, name: string, password: string): void {
+
+  login(event: Event, username: string, password: string): void {
     event.preventDefault(); // This line prevents the form from being submitted
   
-    const user = this.users.find(user => user.name === name && user.password === password);
-    const employer = this.employers.find(employer => employer.name === name && employer.password === password);
+    const user = this.users.find(user => user.name === username);
+    const employer = this.employers.find(employer => employer.name === username);
 
-    if (employer) {
+    if (employer && employer.password === password) {
       window.alert('Login successful');
       console.log('Login successful');
       localStorage.setItem('user', JSON.stringify(employer)); // Store user data in localStorage
       this.router.navigate(['/mainpage']);
-    }else if(user){
+    } else if (user && user.password === password) {
       window.alert('Login successful');
       console.log('Login successful');
       localStorage.setItem('user', JSON.stringify(user)); // Store user data in localStorage
       this.router.navigate(['/mainpage']);
-    } else {
+    } else if (employer) {
+      window.alert('Incorrect password');
+      console.log('Incorrect password');
+    } else if (user) {
+      window.alert('Incorrect password');
+      console.log('Incorrect password');
+    } else{
       window.alert('Invalid credentials');
       console.log('Invalid credentials');
     }
-    
-  }
+}
+
   
 }
 
