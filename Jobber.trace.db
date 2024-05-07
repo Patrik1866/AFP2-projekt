@@ -1,0 +1,3 @@
+2024-05-07 20:29:35.901884+02:00 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(255)": "'fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff... (478)"; SQL statement:
+insert into feed (content,date,feed_code,title,username,id) values (?,?,?,?,?,?) [22001-224]

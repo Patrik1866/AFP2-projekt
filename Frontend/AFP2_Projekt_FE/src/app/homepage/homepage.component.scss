@@ -1,57 +1,58 @@
 .container {
-    text-align: center;
-    padding: 0 20px;
-  }
-  .content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .content.reverse {
-    flex-direction: row-reverse;
-  }
-  .box {
-    border: 1px solid #ddd;
-    padding: 30px; /* Increase padding */
-    width: 70%; 
-    height: 340px;
-    text-align: justify; /* Align text */
-    margin: 0 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white;
-    overflow: auto;
-  }
-  img {
-    max-width: 80%;
-    max-height: 400px;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: transform .2s;
-  }
-  img:hover {
-    transform: scale(1.02);
-  }
-  h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    color: black;
-  }
-  .topText{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 12pt;
-    color: black;
-  }
-  .boxText{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 18pt;
-    line-height: 1.4;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
+  text-align: center;
+  padding: 0 20px;
+}
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content.reverse {
+  flex-direction: row-reverse;
+}
+.box {
+  border: 1px solid #ddd;
+  padding: 30px; /* Increase padding */
+  width: 70%; 
+  height: 340px;
+  text-align: justify; /* Align text */
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  overflow: auto;
+}
+img {
+  max-width: 80%;
+  max-height: 400px;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform .2s;
+}
+img:hover {
+  transform: scale(1.02);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: black;
+}
+.topText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+}
+.boxText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18pt;
+  line-height: 1.4;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left; /* Align text to the left */
+}
