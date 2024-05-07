@@ -64,6 +64,11 @@ export class MainpageComponent implements OnInit{
       console.error('User data not found in local storage');
       return;
     }
+
+    if (!this.checkTitleNotEmpty(title)) {
+      alert('Post title cannot be empty!');
+      return;
+    }
     this.newFeed.username = this.currentuser.name;
     this.newFeed.title = title;
     this.newFeed.content = content.toString();
@@ -81,6 +86,9 @@ export class MainpageComponent implements OnInit{
     })
   }
   
+  checkTitleNotEmpty(title: string): boolean {
+    return !!title.trim(); 
+  }
 
   addPost(feed: Feed, endpoint: string): Observable<Feed>{
       return this.http.post<Feed>('http://localhost:8080/afp2API/feed/addfeed', feed);
@@ -113,6 +121,9 @@ export class MainpageComponent implements OnInit{
       }
     })
   }
+
+
+  
   
 }
   
