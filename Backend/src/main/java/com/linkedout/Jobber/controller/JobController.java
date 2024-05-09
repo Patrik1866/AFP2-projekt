@@ -33,6 +33,7 @@ public class JobController {
         existingJob.setJobDescription(updatedJob.getJobDescription());
         existingJob.setCompany(updatedJob.getCompany());
         existingJob.setSalary(updatedJob.getSalary());
+        existingJob.setCEO(updatedJob.getCEO());
 
         return jobRepository.save(existingJob);
     }

@@ -110,18 +110,34 @@ export class ProfileComponent {
   }
 
   createJob() {
-    this.http.post<any>('http://localhost:8080/afp2API/jobs', this.newJob)
-      .subscribe(
-        response => {
-          console.log('Job added successfully:', response);
-          alert('Job added successfully!');
-          // Optionally, you can reset the form fields after successful submission
-          this.newJob = new Job();
-        },
-        error => {
-          console.error('Error adding job:', error);
-          alert('Error adding job. Please try again.');
-        }
-      );
+    // Retrieve user's information from local storage
+    const employerData = window.localStorage.getItem('employer');
+    if (employerData) {
+      const employer = JSON.parse(employerData);
+      // Set the CEO field based on the user's name
+      this.newJob.CEO = employer.name;
+      console.log(employer.name);
+  
+      this.http.post<any>('http://localhost:8080/afp2API/jobs', this.newJob)
+        .subscribe(
+          response => {
+            console.log('Job added successfully:', response);
+            alert('Job added successfully!');
+            // Optionally, you can reset the form fields after successful submission
+            this.newJob = new Job();
+          },
+          error => {
+            console.error('Error adding job:', error);
+            alert('Error adding job. Please try again.');
+          }
+        );
+    } else {
+      console.error("User data not found in local storage");
+    }
   }
+  
+  
+  
+  
+  
 }

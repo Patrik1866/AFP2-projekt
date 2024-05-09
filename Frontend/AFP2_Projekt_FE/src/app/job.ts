@@ -5,6 +5,7 @@ export class Job {
         public jobTitle?: string,
         public jobDescription?: string,
         public salary?: number,
+        public CEO?: string,
       ) { }
   }
   

@@ -17,13 +17,16 @@ public class Job implements Serializable {
     private String jobDescription;
     private Long salary;
 
+    private String CEO;
+
     public Job(){}
-    public Job(Long  id, String company, Long salary, String jobTitle, String jobDescription){
+    public Job(Long  id, String company, Long salary, String jobTitle, String jobDescription, String CEO){
         this.id = id;
         this.company = company;
         this.salary = salary;
         this.jobTitle = jobTitle;
         this.jobDescription = jobDescription;
+        this.CEO = CEO;
     }
     public Long getId() {
         return id;
@@ -60,5 +63,13 @@ public class Job implements Serializable {
 
     public void setJobDescription(String jobDescription) {
         this.jobDescription = jobDescription;
+    }
+
+    public String getCEO() {
+        return CEO;
+    }
+
+    public void setCEO(String CEO) {
+        this.CEO = CEO;
     }
 }
