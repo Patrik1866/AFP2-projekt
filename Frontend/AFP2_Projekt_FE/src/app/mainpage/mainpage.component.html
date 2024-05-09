@@ -5,26 +5,23 @@
     <button class="postButton" type="submit">Post</button>
   </form>
   <div id="feedsposts" class="posts" style="display: flex; flex-direction: column; align-items: center;">
-    <div *ngFor="let post of posts; let i = index" class="feed">
-      <h1 class="content">{{posts[posts.length - 1 - i].username}}</h1>
-      <h2 class="content">{{ posts[posts.length - 1 - i].title }}</h2>
-      <p class="content">{{posts[posts.length - 1 - i].content}}</p>
-      <p class="date">{{ posts[posts.length - 1 - i].date | date: 'medium' }}</p>
-      <p></p>
-      <button *ngIf="currentuser && currentuser.name === posts[posts.length - 1 - i].username" (click)="deletePost(posts[posts.length - 1 - i])"  class="deleteButton">Törlés</button>
-      <button *ngIf="currentuser && currentuser.name === posts[posts.length - 1 - i].username" type="button"(click)="posts[posts.length - 1 - i].popup = true" class="editButton">Szerkesztés</button>
-      <div class="overlay" *ngIf="posts[posts.length - 1 - i].popup">
-        <div class="popup">
-          <h2>Szerkesztő</h2>
-          <a class="close" (click)="posts[posts.length - 1 - i].popup = false">×</a>
-          <div class="texter">
-            <input #titleEditor id="titleEditor" type="text" value={{posts[posts.length - 1 - i].title}} ><br>
-            <textarea #contentText id="contentEditor" cols="30" rows="10" value={{posts[posts.length - 1 - i].content}}></textarea><br>
-            <button id="saveChangeButton" (click)="updatePost(posts[posts.length - 1 - i],titleEditor.value, contentText.value)">Save changes</button>
+      <div *ngFor="let post of posts" class="feed">
+        <h1 class="content">{{post.username}}</h1>
+        <h2 class="content">{{ post.title }}</h2>
+        <p class="content">{{post.content}}</p>
+        <p class="date">{{post.date}}</p>
+        <p></p>
+        <button *ngIf="currentuser && currentuser.name === post.username" (click)="deletePost(post)"  class="deleteButton">Törlés</button>
+        <button *ngIf="currentuser && currentuser.name === post.username" type="button"(click)="post.popup = true" class="editButton">Szerkesztés</button>
+        <div class="overlay" *ngIf="post.popup">
+          <div class="popup">
+            <h2>Szerkesztő</h2>
+            <a class="close" (click)="post.popup = false">&times;</a>
+            <div class="texter">
+              <input #titleEditor id="titleEditor" type="text" value={{post.title}} ><br>
+              <textarea #contentText id="contentEditor" cols="30" rows="10" value={{post.content}}></textarea><br>
+              <button id="saveChangeButton" (click)="updatePost(post,titleEditor.value, contentText.value)">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </div>
-</div>

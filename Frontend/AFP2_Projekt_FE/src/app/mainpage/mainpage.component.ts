@@ -92,6 +92,7 @@ export class MainpageComponent implements OnInit{
     this.addPost(this.newFeed, '/feed/addfeed').subscribe({
       next: (feed) => {
         console.log(feed);
+        alert('Poszt sikeresen hozzáadva!');
         this.loadPosts();
       },
       error: (error) => {
@@ -112,6 +113,7 @@ export class MainpageComponent implements OnInit{
     this.http.delete<Feed>('http://localhost:8080/afp2API/feed/' + feed.feedCode).subscribe({
       next: (response) => {
         console.log(response);
+        alert('Poszt sikeresen törölve!');
         this.loadPosts();
       },
       error: (error) => {
@@ -128,6 +130,7 @@ export class MainpageComponent implements OnInit{
     this.http.put<Feed>('http://localhost:8080/afp2API/feed/' + feed.feedCode, updatedPost).subscribe({
       next: (response) => {
         console.log(response);
+        alert('Poszt sikeresen frissítve!');
         this.loadPosts();
       },
       error: (error) => {
