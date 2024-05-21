@@ -53,7 +53,45 @@ Azért hogy egyszerűbbé tegyük a munkáltatók valamint a munkavállalók fel
 
 ## 8. Képernyőtervek
 
-![képnév](gitlink ahol a kép van)
+## Home page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv1.png" alt="Home page" />
+</p>
+
+## Login page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv2.png" alt="Login page" />
+</p>
+
+## Register page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv3.png" alt="Register page" />
+</p>
+
+## Profile page 1
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv4.png" alt="Profile page 1" />
+</p>
+
+## Profile page 2
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv5.png" alt="Profile page 2" />
+</p>
+
+## Freelancers page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv6.png" alt="Freelancers page" />
+</p>
+
+## Feed page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv7.png" alt="Feed page" />
+</p>
+
+## Jobs page
+<p align="center">
+  <img src="https://github.com/Patrik1866/AFP2-projekt/blob/main/Documents/kepernyoTervek/terv8.png" alt="Jobs page" />
+</p>
 
 ## 9. Forgatókönyvek
 
