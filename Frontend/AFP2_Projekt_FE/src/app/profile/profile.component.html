@@ -36,15 +36,15 @@
     <h2>Add New Job:</h2>
     <form (submit)="createJob()">
       <label for="company">Company:</label><br>
-      <input type="text" id="company" name="company" [(ngModel)]="newJob.company"><br>
+      <input type="text" id="company" name="company" [(ngModel)]="job.company"><br>
       <label for="jobTitle">Job Title:</label><br>
-      <input type="text" id="jobTitle" name="jobTitle" [(ngModel)]="newJob.jobTitle"><br>
+      <input type="text" id="jobTitle" name="jobTitle" [(ngModel)]="job.jobTitle"><br>
       <label for="jobDescription">Job Description:</label><br>
-      <textarea id="jobDescription" name="jobDescription" [(ngModel)]="newJob.jobDescription"></textarea><br>
+      <textarea id="jobDescription" name="jobDescription" [(ngModel)]="job.jobDescription"></textarea><br>
       <label for="salary">Salary:</label><br>
-      <input type="number" id="salary" name="salary" [(ngModel)]="newJob.salary"><br>
+      <input type="number" id="salary" name="salary" [(ngModel)]="job.salary"><br>
       <label for="ceo">CEO:</label><br>
-      <input type="text" id="ceo" name="ceo" [(ngModel)]="newJob.CEO" readonly><br>
+      <input type="text" id="ceo" name="ceo" [(ngModel)]="job.ceo" readonly><br>
       <input type="submit" value="Add Job">
     </form>
   </div>

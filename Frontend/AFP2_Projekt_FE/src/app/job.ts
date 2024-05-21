@@ -1,11 +1,19 @@
 export class Job {
-    constructor(
-        public id?: number,
-        public company?: string,
-        public jobTitle?: string,
-        public jobDescription?: string,
-        public salary?: number,
-        public CEO?: string,
-      ) { }
+    id: string;
+    company: string;
+    jobTitle: string;
+    jobDescription: string;
+    salary: string;
+    ceo: string;
+
+    constructor(){
+        this.id = '';
+        this.company = '';
+        this.jobTitle = '';
+        this.jobDescription = '';
+        this.salary = '';
+        this.ceo = '';
+        
+      }
   }
   

@@ -18,7 +18,7 @@ public class JobController {
     public List<Job> getJobs(){
         return jobRepository.findAll();
     }
-    @PostMapping("/jobs")
+    @PostMapping("/addjobs")
     public Job createJob(@RequestBody Job job){return jobRepository.save(job);}
 
     @DeleteMapping("/jobs/{id}")
@@ -33,7 +33,7 @@ public class JobController {
         existingJob.setJobDescription(updatedJob.getJobDescription());
         existingJob.setCompany(updatedJob.getCompany());
         existingJob.setSalary(updatedJob.getSalary());
-        existingJob.setCEO(updatedJob.getCEO());
+        existingJob.setCeo(updatedJob.getCeo());
 
         return jobRepository.save(existingJob);
     }

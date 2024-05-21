@@ -32,7 +32,15 @@ export class ProfileComponent {
     phone: '',
   };
 
-  newJob: Job = new Job(); // Initialize a new job object
+  job = {
+    id: '',
+    company: '',
+    jobTitle: '',
+    jobDescription: '',
+    salary: '',
+    ceo: '',
+  };
+
 
   constructor(private http: HttpClient) {
     this.loadUserData();
@@ -56,7 +64,7 @@ export class ProfileComponent {
   loadUserData() {
     if (typeof window !== 'undefined') {
       const userData = window.localStorage.getItem('user');
-      const employerData = window.localStorage.getItem('employer');
+      const employerData = window.localStorage.getItem('user');
       if (userData) {
         try {
           this.user = JSON.parse(userData);
@@ -69,6 +77,7 @@ export class ProfileComponent {
         try {
           this.employer = JSON.parse(employerData);
           this.isUser = false;
+          this.job.ceo = this.employer.name;
         } catch(e) {
           console.error("Error parsing employer data", e);
         }
@@ -110,21 +119,25 @@ export class ProfileComponent {
   }
 
   createJob() {
-    // Retrieve user's information from local storage
-    const employerData = window.localStorage.getItem('employer');
+    const employerData = window.localStorage.getItem('user');
     if (employerData) {
       const employer = JSON.parse(employerData);
-      // Set the CEO field based on the user's name
-      this.newJob.CEO = employer.name;
+      this.job.ceo = employer.name;
       console.log(employer.name);
   
-      this.http.post<any>('http://localhost:8080/afp2API/jobs', this.newJob)
+      this.http.post<any>('http://localhost:8080/afp2API/addjobs', this.job)
         .subscribe(
           response => {
             console.log('Job added successfully:', response);
             alert('Job added successfully!');
-            // Optionally, you can reset the form fields after successful submission
-            this.newJob = new Job();
+            this.job = {
+              id: '',
+              company: '',
+              jobTitle: '',
+              jobDescription: '',
+              salary: '',
+              ceo: employer.name,
+            }
           },
           error => {
             console.error('Error adding job:', error);
