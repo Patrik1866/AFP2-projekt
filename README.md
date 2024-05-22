@@ -11,4 +11,4 @@ Csapattagok:
 - [Erdélyi Patrik](https://github.com/Patrik1866)
 - [Kalas Gergő](https://github.com/TheGerixon)
 - [Nagy Bálint](https://github.com/Vash2084)
-- [Koczka gergő](https://github.com/Gergoooo)
+- [Koczka Gergő](https://github.com/Gergoooo)

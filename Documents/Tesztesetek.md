@@ -79,3 +79,32 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 |-------|-------------------|--------------------------------------------------|---------|------------|--------------|----------|
 |   1   | Munkák betöltése  | Ellenőrizzük, hogy a munkák sikeresen megjelennek az oldalon. | Siker | - | Kalas Gergő | 2024-05-03 |
 
+# Koczka Gergő
+
+### Feed oldal tesztesetei:
+
+| Lépés | Funkció           | Tesztelés leírása                          | Státusz | Megjegyzés | Aláírás      | Időpont  |
+|-------|-------------------|--------------------------------------------|---------|------------|--------------|----------|
+|   1   | Poszt hozzáadása  | Ellenőrizzük, hogy a poszt sikeresen megjelenik a feeden. | Siker    | -          | Koczka Gergő | 2024-05-22 |
+|   2   | Poszt törlése     | Ellenőrizzük, hogy a poszt eltávolításra kerül a feedről. | Siker    | -          | Koczka Gergő | 2024-05-22 |
+|   3   | Poszt módosítása  | Ellenőrizzük, hogy a poszt a változtatásokkal frissül a feeden. | Siker    | -          | Koczka Gergő | 2024-05-22 |
+
+### Profil oldal tesztesetei:
+
+| Lépés | Funkció                     | Tesztelés leírása                                | Státusz | Megjegyzés | Aláírás      | Időpont  |
+|-------|-----------------------------|--------------------------------------------------|---------|------------|--------------|----------|
+|   1   | Felhasználói adatok frissítése | Ellenőrizzük, hogy az adatok sikeresen frissülnek a profiloldalon. | Siker | -       | Koczka Gergő | 2024-05-22 |
+|   2   | Employerként új munkahely hozzáadása | Ellenőrizzük, hogy az új munkahely sikeresen hozzáadódik. | Siker | -    | Koczka Gergő | 2024-05-22 |
+
+### Home oldal tesztesetei:
+
+| Lépés | Funkció           | Tesztelés leírása                                | Státusz | Megjegyzés | Aláírás      | Időpont  |
+|-------|-------------------|--------------------------------------------------|---------|------------|--------------|----------|
+|   1   | Oldal betöltése   | Ellenőrizzük, hogy az oldal betöltődik, és megjelennek a tartalmak. | Siker | - | Koczka Gergő | 2024-05-22 |
+
+### Freelancers oldal tesztesetei:
+
+| Lépés | Funkció           | Tesztelés leírása                                | Státusz | Megjegyzés | Aláírás      | Időpont  |
+|-------|-------------------|--------------------------------------------------|---------|------------|--------------|----------|
+|   1   | Freelancerek betöltése | Ellenőrizzük, hogy a freelancerek sikeresen megjelennek az oldalon. | Siker | - | Koczka Gergő | 2024-05-22 |
+
