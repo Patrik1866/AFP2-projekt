@@ -11,8 +11,8 @@
         <p class="content">{{post.content}}</p>
         <p class="date">{{post.date}}</p>
         <p></p>
-        <button *ngIf="currentuser && currentuser.name === post.username" (click)="deletePost(post)"  class="deleteButton">Törlés</button>
-        <button *ngIf="currentuser && currentuser.name === post.username" type="button"(click)="post.popup = true" class="editButton">Szerkesztés</button>
+        <button *ngIf="currentuser && currentuser.name === post.username" (click)="deletePost(post)"  class="deleteButton">Delete</button>
+        <button *ngIf="currentuser && currentuser.name === post.username" type="button"(click)="post.popup = true" class="editButton">Edit</button>
         <div class="overlay" *ngIf="post.popup">
           <div class="popup">
             <h2>Szerkesztő</h2>
